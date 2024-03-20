@@ -1,22 +1,20 @@
 :root {
     --josefin-sans-font: "Josefin Sans", sans-serif;
 }
-  
+ 
 .custom-font {
     font-family: var(--josefin-sans-font);
     font-optical-sizing: auto;
-    font-weight: 550;
     font-style: normal;
 }
-html,
-body {
+html, body {
   height: 100%;
 }
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  min-height: 100vh;
   background-image: linear-gradient(
         rgba(253, 208, 76, 0.9),
         rgba(255, 109, 85, 0.9),
@@ -25,33 +23,44 @@ body {
     );
     background-attachment: fixed;
 }
-
-header,
-footer {
+header, footer {
   flex: 0 0 auto;
 }
-
 main {
   text-align: center;
   padding: 5vmin;
   flex: 1 0 auto;
 }
-
+/*----- Header -----*/
 .logo{
     width: 300px;
     height: 100px;
     display: flex;
-    margin: 50px;
+    margin-left: 130px;
+    margin-top: 50px;
 }
-
-
+.tab-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+}
 .tab-text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 2em;
     margin: 10px;
 }
 .tab-row {
     display: grid; 
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 .row-elem {
     color: inherit;
@@ -72,66 +81,109 @@ main {
 }
 .tab-content {
     background-color: #ffffff;
-    padding: 50px 40px;
+    padding: 40px 0;
     border-radius: 0 0 5px 5px;
-}
-.label {
-    font-weight: bold;
-    flex: 0 0 100px;
-}
-.text-input {
-    margin-bottom: 10px;
-    flex: 1;
-}
-
-.label, .text-input {
-    margin-right: 20px; 
-    margin-bottom: 10px; 
-}
-
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
 }
 .white-svg {
     filter: brightness(0) invert(0.55);
 }
 
-.button {
-    background-color: #007bff;
-    color: #fff;
+/*------ Content -------*/
+form .top-row, form .bottom-row{
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0 50px;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
+}
+
+form p{
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form .amount, .bottom-row{
+    margin: 15px;
+}
+
+form input{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 500px;
+    padding: 15px;
+    border: 1px solid #999;
+}
+
+form input:focus{
+    padding: 0 15px;
+    border: 2px solid rgba(60, 106, 152);
+}
+
+form .drop-list{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.drop-list .select-box{
+    display: flex;
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+}
+
+.select-box select{
+    width: auto;
+}
+
+.select-box img{
+    max-width: 30px;
+}
+
+.drop-list .icon{
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 22px;
+    margin-top: 30px;
 }
 
-.button:hover {
-    background-color: #0056b3;
+form .exchange-rate{
+    font-size: 20px;
 }
 
-.box-input {
-    position: relative; /* Ensure position context for dropdown */
-  }
-  
-.box-InputWrapper {
-    position: relative; /* Ensure position context for search input */
-}
-
-.box-InputWrapper input[type="text"] {
-    width: 100%; /* Take full width of parent */
-    padding: 8px; /* Adjust padding as needed */
-    border: 1px solid #ccc; /* Border style */
-    border-radius: 4px; /* Rounded corners */
-}
-
-/* Styles for the dropdown icon */
-.box-item-icon {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
+form button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(76, 145, 212);
 }
 
 /*------ footer -------*/
@@ -151,6 +203,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.social_icon{
+    margin-left: -20px;
+}
 footer .social_icon li,
 footer .menu li {
   list-style: none;
@@ -166,7 +221,6 @@ footer .social_icon li a:hover {
   transform: translateY(-15px);
   color: white;
 }
-
 footer .menu li a {
   font-size: 1.2em;
   margin: 0 10px;
@@ -180,7 +234,7 @@ footer .menu li a:hover {
   opacity: 1;
   color: darkblue;
 }
-p {
+footer p {
     color: white;
     text-align: center;
     margin-top: 15px;

@@ -1,85 +1,54 @@
 <%- include("header.ejs") %>
-        <main class="tab-content active">
-            <div>
-                <div class="grid-container">
-                    <label for="amount" class="label">Amount</label>
-                    <div class="text-input">
-                        <span class="amount-input-number">1.00</span>
-                        <span class="amount-input" style="white-space: nowrap;">
-                            $<input type="text" inputmode="decimal" autocomplete="off" id="amount" class="amount-input-number" value="1.00" style="width: 35px;">
-                        </span>
-                    </div>
-                    <div aria-live="assertive" class="error-text></div>
-                    <label for="FromCurrency" class="label">From</label>
-                    <div class="box-input" id="FromCurrency">
-                        <div class="text-input box-input">
-                            <div class="box-faceplate">
-                                <div class="box-item-icon">
-                                    <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-                                        <img alt="usd currencies" sizes="100vw" srcset="/svgs/currencies/usd.static.svg 640w, /svgs/currencies/usd.static.svg 750w, /svgs/currencies/usd.static.svg 828w, /svgs/currencies/usd.static.svg 1080w, /svgs/currencies/usd.static.svg 1200w, /svgs/currencies/usd.static.svg 1920w, /svgs/currencies/usd.static.svg 2048w, /svgs/currencies/usd.static.svg 3840w" src="/svgs/currencies/usd.static.svg" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
-                                        <noscript></noscript>
-                                    </span>
-                                </div>
-                                <div id="FromCurrency-descriptiveText" class="box__FaceplateText">
-                                    <span class="dark-text">USD – </span>
-                                    US Dollar
-                                </div>
-                                <ion-icon name="chevron-down-outline"></ion-icon>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="box-InputWrapper">
-                                <input type="text" placeholder="Type to search..." spellcheck="false" autocomplete="off" role="combobox" class="text-input box-input" value="">
-                            </div>
+    <div class="tab-content active">
+        <form action="#">
+            <div class="top-row">
+                <div class="amount">
+                    <p>Amount</p>
+                    <input type="number" value="1.00">
+                </div>
+                <div class="drop-list">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-box">
+                            <img src="/images/flags/gb.png" alt="flag">
+                            <select>
+                                <option value="GBP">GBP</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="JPY">JPY</option>
+                                <option value="CNY">CNY</option>
+                                <option value="MYR">MYR</option>
+                            </select>
                         </div>
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div class="styled-div">
-                        <button type="button" class="styled-button">
+                    <div class="swap">
+                        <button type="button" class="swap-button">
                             <ion-icon name="swap-horizontal-outline"></ion-icon>
                         </button>
                     </div>
-                    <div></div>
-                    <label for="ToCurrency" class="label">To</label>
-                    <div class="box-input" id="FromCurrency">
-                        <div class="text-input box-input">
-                            <div class="box-faceplate">
-                                <div class="box-item-icon">
-                                    <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-                                        <img alt="usd currencies" sizes="100vw" srcset="/svgs/currencies/usd.static.svg 640w, /svgs/currencies/usd.static.svg 750w, /svgs/currencies/usd.static.svg 828w, /svgs/currencies/usd.static.svg 1080w, /svgs/currencies/usd.static.svg 1200w, /svgs/currencies/usd.static.svg 1920w, /svgs/currencies/usd.static.svg 2048w, /svgs/currencies/usd.static.svg 3840w" src="/svgs/currencies/usd.static.svg" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
-                                        <noscript></noscript>
-                                    </span>
-                                </div>
-                                <div id="FromCurrency-descriptiveText" class="box__FaceplateText">
-                                    <span class="dark-text">EUR – </span>
-                                    Euro
-                                </div>
-                                <ion-icon name="chevron-down-outline"></ion-icon>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="box-InputWrapper">
-                                <input type="text" placeholder="Type to search..." spellcheck="false" autocomplete="off" role="combobox" class="text-input box-input" value="">
-                            </div>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select-box">
+                            <img src="/images/flags/eu.png" alt="flag">
+                            <select>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="USD">USD</option>
+                                <option value="JPY">JPY</option>
+                                <option value="CNY">CNY</option>
+                                <option value="MYR">MYR</option>
+                            </select>
                         </div>
                     </div>
-                    <div></div>
-                </div>
-                <div class="submit-zone">
-                    <!-- <div class="miscellany">
-                        <div class="icon-container">
-                            <ion-icon name="information-circle-outline"></ion-icon>
-                        </div>
-                        <div class="text-container">We use the mid-market rate for our Converter. This is for informational purposes only. You won’t receive this rate when sending money. 
-                            <a href="https://transfer.xe.com/account/login/home?icid=XECOM:Home:LoginBut:Login:Glob:HPXEMTLogin" class="link__BaseLink-sc-viajgt-0 gwhWit">Login to view send rates</a>
-                        </div>
-                    </div> -->
-                    <button class="button" style="grid-area: buttons;">Convert</button>
                 </div>
             </div>
-        </main>
+            <div class="bottom-row">
+                <div class="exchange-rate">1 GBP = 1.17 EUR</div>
+                <button type="submit" class="convert-button">Convert</button>
+            </div>
+        </form>
+    </div>
 
-    <p>USD to EUR: <%=content.toFixed(4)%></p>
+    <p class="custom-font">USD to EUR: <%=content.toFixed(4)%></p>
 <%- include("footer.ejs") %>
 

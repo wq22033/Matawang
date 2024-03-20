@@ -2,22 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Hanken+Grotesk:ital,wght@0,600;1,600&family=Libre+Baskerville&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="icon" href="/images/logo.png">
     <title>Mata Wang</title>
 </head>
-<header>
-    <img class="logo" src="/images/logo3.png" alt="Mata Wang logo">
-</header>
-<main class="container">
-    <div class="tab-container">
-        <div class="tab-row">
-            <a href="/" class="row-elem <%= active === 'convert' ? 'active' : '' %>">
-                <img src="/images/coins.svg" alt="coins" width="40px" height="40px" class="<%= active === 'convert' ? '' : 'white-svg' %>">
-                <span class="tab-text custom-font">Convert</span>
-            </a>
-            <a href="/charts" class="row-elem <%= active === 'charts' ? 'active' : '' %>">
-                <img src="/images/chart.svg" alt="chart" width="30px" height="30px" class="<%= active === 'charts' ? '' : 'white-svg' %>">
-                <span class="tab-text custom-font">Charts</span>
-            </a>
-        </div>
+<body>
+    <header>
+        <img class="logo" src="/images/logo3.png" alt="Mata Wang logo">
+    </header>
+    <main class="container">
+        <div class="tab-container">
+            <div class="tab-row">
+                <a href="/" class="row-elem <%= active === 'convert' ? 'active' : '' %>">
+                    <img src="/images/coins.svg" alt="coins" width="40px" height="40px" class="<%= active === 'convert' ? '' : 'white-svg' %>">
+                    <span class="tab-text">Convert</span>
+                </a>
+                <a href="/charts" class="row-elem <%= active === 'charts' ? 'active' : '' %>">
+                    <img src="/images/chart.svg" alt="chart" width="30px" height="30px" class="<%= active === 'charts' ? '' : 'white-svg' %>">
+                    <span class="tab-text">Charts</span>
+                </a>
+            </div>
