@@ -5,7 +5,7 @@
 .custom-font {
     font-family: var(--josefin-sans-font);
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 550;
     font-style: normal;
 }
 html,
@@ -17,6 +17,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  background-image: linear-gradient(
+        rgba(253, 208, 76, 0.9),
+        rgba(255, 109, 85, 0.9),
+        rgba(76, 145, 212, 0.9),
+        rgba(60, 106, 152, 0.9)
+    );
+    background-attachment: fixed;
 }
 
 header,
@@ -37,19 +44,95 @@ main {
     margin: 50px;
 }
 
+
 .tab-text{
     font-size: 2em;
     margin: 10px;
 }
 .tab-row {
-    display: grid; /* Use CSS Grid */
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
 }
-a.row-elem {
-    color: inherit; /* Use the color inherited from its parent */
-    text-decoration: none; /* Remove underline */
+.row-elem {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
+.active{
+    background-color: white;
+}
+.row-elem:not(.active) {
+    background-color: gainsboro;
+    color: gray;
+}
+.tab-content {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 0 0 5px 5px;
+}
+.label {
+    font-weight: bold;
+    flex: 0 0 100px;
+}
+.text-input {
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.label, .text-input {
+    margin-right: 20px; 
+    margin-bottom: 10px; 
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.white-svg {
+    filter: brightness(0) invert(0.55);
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.box-input {
+    position: relative; /* Ensure position context for dropdown */
+  }
   
+.box-InputWrapper {
+    position: relative; /* Ensure position context for search input */
+}
+
+.box-InputWrapper input[type="text"] {
+    width: 100%; /* Take full width of parent */
+    padding: 8px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Styles for the dropdown icon */
+.box-item-icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
 
 /*------ footer -------*/
 footer {
@@ -77,11 +160,11 @@ footer .social_icon li a {
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
-  color: #333;
+  color: white;
 }
 footer .social_icon li a:hover {
   transform: translateY(-15px);
-  color: #333;
+  color: white;
 }
 
 footer .menu li a {
@@ -91,13 +174,14 @@ footer .menu li a {
   transition: 0.5s;
   text-decoration: none;
   opacity: 0.75;
-  color: #333;
+  color: white;
 }
 footer .menu li a:hover {
   opacity: 1;
-  color: black;
+  color: darkblue;
 }
 p {
+    color: white;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
