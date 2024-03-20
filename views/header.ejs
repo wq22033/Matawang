@@ -12,12 +12,12 @@
 <main class="container">
     <div class="tab-container">
         <div class="tab-row">
-            <a href="/" class="row-elem">
-                <img src="/images/coins.svg" alt="coins" width="40px" height="40px">
+            <a href="/" class="row-elem <%= active === 'convert' ? 'active' : '' %>">
+                <img src="/images/coins.svg" alt="coins" width="40px" height="40px" class="<%= active === 'convert' ? '' : 'white-svg' %>">
                 <span class="tab-text custom-font">Convert</span>
             </a>
-            <a href="/charts" class="row-elem">
-                <img src="/images/chart.svg" alt="chart" width="30px" height="30px">
+            <a href="/charts" class="row-elem <%= active === 'charts' ? 'active' : '' %>">
+                <img src="/images/chart.svg" alt="chart" width="30px" height="30px" class="<%= active === 'charts' ? '' : 'white-svg' %>">
                 <span class="tab-text custom-font">Charts</span>
             </a>
         </div>

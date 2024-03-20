@@ -19,8 +19,13 @@ app.get("/", async (req, res) => {
     //     res.render("index.ejs", { content: response.data.EUR.value })
     //     console.log(response);
     // });
-    res.render("index.ejs", { content: 3.1423456 })
+    res.render("index.ejs", {active: 'convert', content: 3.1423456 })
     
+});
+
+app.get("/charts", async (req, res) => {
+
+    res.render("charts.ejs", {active: 'charts'})
 });
 
 
