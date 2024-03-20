@@ -1,0 +1,1551 @@
+[
+  {
+    "Index": 1,
+    "Name": "United Arab Emirates Dirham",
+    "Code": "AED",
+    "Countries": [
+      "AE"
+    ]
+  },
+  {
+    "Index": 2,
+    "Name": "Afghan Afghani",
+    "Code": "AFN",
+    "Countries": [
+      "AF"
+    ]
+  },
+  {
+    "Index": 3,
+    "Name": "Albanian Lek",
+    "Code": "ALL",
+    "Countries": [
+      "AL"
+    ]
+  },
+  {
+    "Index": 4,
+    "Name": "Armenian Dram",
+    "Code": "AMD",
+    "Countries": [
+      "AM"
+    ]
+  },
+  {
+    "Index": 5,
+    "Name": "NL Antillean Guilder",
+    "Code": "ANG",
+    "Countries": [
+      "CW",
+      "SX"
+    ]
+  },
+  {
+    "Index": 6,
+    "Name": "Angolan Kwanza",
+    "Code": "AOA",
+    "Countries": [
+      "AO"
+    ]
+  },
+  {
+    "Index": 7,
+    "Name": "Argentine Peso",
+    "Code": "ARS",
+    "Countries": [
+      "AR"
+    ]
+  },
+  {
+    "Index": 8,
+    "Name": "Australian Dollar",
+    "Code": "AUD",
+    "Countries": [
+      "AU",
+      "CC",
+      "CX",
+      "HM",
+      "KI",
+      "NF",
+      "NR",
+      "TV"
+    ]
+  },
+  {
+    "Index": 9,
+    "Name": "Aruban Florin",
+    "Code": "AWG",
+    "Countries": [
+      "AW"
+    ]
+  },
+  {
+    "Index": 10,
+    "Name": "Azerbaijani Manat",
+    "Code": "AZN",
+    "Countries": [
+      "AZ"
+    ]
+  },
+  {
+    "Index": 11,
+    "Name": "Bosnia-Herzegovina Convertible Mark",
+    "Code": "BAM",
+    "Countries": [
+      "BA"
+    ]
+  },
+  {
+    "Index": 12,
+    "Name": "Barbadian Dollar",
+    "Code": "BBD",
+    "Countries": [
+      "BB"
+    ]
+  },
+  {
+    "Index": 13,
+    "Name": "Bangladeshi Taka",
+    "Code": "BDT",
+    "Countries": [
+      "BD"
+    ]
+  },
+  {
+    "Index": 14,
+    "Name": "Bulgarian Lev",
+    "Code": "BGN",
+    "Countries": [
+      "BG"
+    ]
+  },
+  {
+    "Index": 15,
+    "Name": "Bahraini Dinar",
+    "Code": "BHD",
+    "Countries": [
+      "BH"
+    ]
+  },
+  {
+    "Index": 16,
+    "Name": "Burundian Franc",
+    "Code": "BIF",
+    "Countries": [
+      "BI"
+    ]
+  },
+  {
+    "Index": 17,
+    "Name": "Bermudan Dollar",
+    "Code": "BMD",
+    "Countries": [
+      "BM"
+    ]
+  },
+  {
+    "Index": 18,
+    "Name": "Brunei Dollar",
+    "Code": "BND",
+    "Countries": [
+      "BN"
+    ]
+  },
+  {
+    "Index": 19,
+    "Name": "Bolivian Boliviano",
+    "Code": "BOB",
+    "Countries": [
+      "BO"
+    ]
+  },
+  {
+    "Index": 20,
+    "Name": "Brazilian Real",
+    "Code": "BRL",
+    "Countries": [
+      "BR"
+    ]
+  },
+  {
+    "Index": 21,
+    "Name": "Bahamian Dollar",
+    "Code": "BSD",
+    "Countries": [
+      "BS"
+    ]
+  },
+  {
+    "Index": 22,
+    "Name": "Bhutanese Ngultrum",
+    "Code": "BTN",
+    "Countries": [
+      "BT"
+    ]
+  },
+  {
+    "Index": 23,
+    "Name": "Botswanan Pula",
+    "Code": "BWP",
+    "Countries": [
+      "BW",
+      "ZW"
+    ]
+  },
+  {
+    "Index": 24,
+    "Name": "Belarusian ruble",
+    "Code": "BYN",
+    "Countries": []
+  },
+  {
+    "Index": 25,
+    "Name": "Belarusian Ruble",
+    "Code": "BYR",
+    "Countries": [
+      "BY"
+    ]
+  },
+  {
+    "Index": 26,
+    "Name": "Belize Dollar",
+    "Code": "BZD",
+    "Countries": [
+      "BZ"
+    ]
+  },
+  {
+    "Index": 27,
+    "Name": "Canadian Dollar",
+    "Code": "CAD",
+    "Countries": [
+      "CA"
+    ]
+  },
+  {
+    "Index": 28,
+    "Name": "Congolese Franc",
+    "Code": "CDF",
+    "Countries": [
+      "CD"
+    ]
+  },
+  {
+    "Index": 29,
+    "Name": "Swiss Franc",
+    "Code": "CHF",
+    "Countries": [
+      "CH",
+      "LI"
+    ]
+  },
+  {
+    "Index": 30,
+    "Name": "Unidad de Fomento",
+    "Code": "CLF",
+    "Countries": [
+      "CL"
+    ]
+  },
+  {
+    "Index": 31,
+    "Name": "Chilean Peso",
+    "Code": "CLP",
+    "Countries": [
+      "CL"
+    ]
+  },
+  {
+    "Index": 32,
+    "Name": "Chinese Yuan",
+    "Code": "CNY",
+    "Countries": [
+      "CN"
+    ]
+  },
+  {
+    "Index": 33,
+    "Name": "Coombian Peso",
+    "Code": "COP",
+    "Countries": [
+      "CO"
+    ]
+  },
+  {
+    "Index": 34,
+    "Name": "Costa Rican Col\u00f3n",
+    "Code": "CRC",
+    "Countries": [
+      "CR"
+    ]
+  },
+  {
+    "Index": 35,
+    "Name": "Cuban Convertible Peso",
+    "Code": "CUC",
+    "Countries": [
+      "CU"
+    ]
+  },
+  {
+    "Index": 36,
+    "Name": "Cuban Peso",
+    "Code": "CUP",
+    "Countries": [
+      "CU"
+    ]
+  },
+  {
+    "Index": 37,
+    "Name": "Cape Verdean Escudo",
+    "Code": "CVE",
+    "Countries": [
+      "CV"
+    ]
+  },
+  {
+    "Index": 38,
+    "Name": "Czech Republic Koruna",
+    "Code": "CZK",
+    "Countries": [
+      "CZ"
+    ]
+  },
+  {
+    "Index": 39,
+    "Name": "Djiboutian Franc",
+    "Code": "DJF",
+    "Countries": [
+      "DJ"
+    ]
+  },
+  {
+    "Index": 40,
+    "Name": "Danish Krone",
+    "Code": "DKK",
+    "Countries": [
+      "DK",
+      "FO",
+      "GL"
+    ]
+  },
+  {
+    "Index": 41,
+    "Name": "Dominican Peso",
+    "Code": "DOP",
+    "Countries": [
+      "DO"
+    ]
+  },
+  {
+    "Index": 42,
+    "Name": "Algerian Dinar",
+    "Code": "DZD",
+    "Countries": [
+      "DZ"
+    ]
+  },
+  {
+    "Index": 43,
+    "Name": "Egyptian Pound",
+    "Code": "EGP",
+    "Countries": [
+      "EG",
+      "PS"
+    ]
+  },
+  {
+    "Index": 44,
+    "Name": "Eritrean Nakfa",
+    "Code": "ERN",
+    "Countries": [
+      "ER"
+    ]
+  },
+  {
+    "Index": 45,
+    "Name": "Ethiopian Birr",
+    "Code": "ETB",
+    "Countries": [
+      "ET"
+    ]
+  },
+  {
+    "Index": 46,
+    "Name": "Euro",
+    "Code": "EUR",
+    "Countries": [
+      "EU",
+      "AD",
+      "AT",
+      "AX",
+      "BE",
+      "BL",
+      "CP",
+      "CY",
+      "DE",
+      "EA",
+      "EE",
+      "ES",
+      "EU",
+      "FI",
+      "FR",
+      "FX",
+      "GF",
+      "GP",
+      "GR",
+      "IC",
+      "IE",
+      "IT",
+      "LT",
+      "LU",
+      "LV",
+      "MC",
+      "ME",
+      "MF",
+      "MQ",
+      "MT",
+      "NL",
+      "PM",
+      "PT",
+      "RE",
+      "SI",
+      "SK",
+      "SM",
+      "TF",
+      "VA",
+      "XK",
+      "YT",
+      "ZW"
+    ]
+  },
+  {
+    "Index": 47,
+    "Name": "Fijian Dollar",
+    "Code": "FJD",
+    "Countries": [
+      "FJ"
+    ]
+  },
+  {
+    "Index": 48,
+    "Name": "Falkland Islands Pound",
+    "Code": "FKP",
+    "Countries": [
+      "FK"
+    ]
+  },
+  {
+    "Index": 49,
+    "Name": "British Pound Sterling",
+    "Code": "GBP",
+    "Countries": [
+      "GB",
+      "GG",
+      "GS",
+      "IM",
+      "JE",
+      "TA",
+      "UK",
+      "ZW"
+    ]
+  },
+  {
+    "Index": 50,
+    "Name": "Georgian Lari",
+    "Code": "GEL",
+    "Countries": [
+      "GE"
+    ]
+  },
+  {
+    "Index": 51,
+    "Name": "Guernsey pound",
+    "Code": "GGP",
+    "Countries": []
+  },
+  {
+    "Index": 52,
+    "Name": "Ghanaian Cedi",
+    "Code": "GHS",
+    "Countries": [
+      "GH"
+    ]
+  },
+  {
+    "Index": 53,
+    "Name": "Gibraltar Pound",
+    "Code": "GIP",
+    "Countries": [
+      "GI"
+    ]
+  },
+  {
+    "Index": 54,
+    "Name": "Gambian Dalasi",
+    "Code": "GMD",
+    "Countries": [
+      "GM"
+    ]
+  },
+  {
+    "Index": 55,
+    "Name": "Guinean Franc",
+    "Code": "GNF",
+    "Countries": [
+      "GN"
+    ]
+  },
+  {
+    "Index": 56,
+    "Name": "Guatemalan Quetzal",
+    "Code": "GTQ",
+    "Countries": [
+      "GT"
+    ]
+  },
+  {
+    "Index": 57,
+    "Name": "Guyanaese Dollar",
+    "Code": "GYD",
+    "Countries": [
+      "GY"
+    ]
+  },
+  {
+    "Index": 58,
+    "Name": "Hong Kong Dollar",
+    "Code": "HKD",
+    "Countries": [
+      "HK"
+    ]
+  },
+  {
+    "Index": 59,
+    "Name": "Honduran Lempira",
+    "Code": "HNL",
+    "Countries": [
+      "HN"
+    ]
+  },
+  {
+    "Index": 60,
+    "Name": "Croatian Kuna",
+    "Code": "HRK",
+    "Countries": [
+      "HR"
+    ]
+  },
+  {
+    "Index": 61,
+    "Name": "Haitian Gourde",
+    "Code": "HTG",
+    "Countries": [
+      "HT"
+    ]
+  },
+  {
+    "Index": 62,
+    "Name": "Hungarian Forint",
+    "Code": "HUF",
+    "Countries": [
+      "HU"
+    ]
+  },
+  {
+    "Index": 63,
+    "Name": "Indonesian Rupiah",
+    "Code": "IDR",
+    "Countries": [
+      "ID"
+    ]
+  },
+  {
+    "Index": 64,
+    "Name": "Israeli New Sheqel",
+    "Code": "ILS",
+    "Countries": [
+      "IL",
+      "PS"
+    ]
+  },
+  {
+    "Index": 65,
+    "Name": "Manx pound",
+    "Code": "IMP",
+    "Countries": []
+  },
+  {
+    "Index": 66,
+    "Name": "Indian Rupee",
+    "Code": "INR",
+    "Countries": [
+      "BT",
+      "IN"
+    ]
+  },
+  {
+    "Index": 67,
+    "Name": "Iraqi Dinar",
+    "Code": "IQD",
+    "Countries": [
+      "IQ"
+    ]
+  },
+  {
+    "Index": 68,
+    "Name": "Iranian Rial",
+    "Code": "IRR",
+    "Countries": [
+      "IR"
+    ]
+  },
+  {
+    "Index": 69,
+    "Name": "Icelandic Kr\u00f3na",
+    "Code": "ISK",
+    "Countries": [
+      "IS"
+    ]
+  },
+  {
+    "Index": 70,
+    "Name": "Jersey pound",
+    "Code": "JEP",
+    "Countries": []
+  },
+  {
+    "Index": 71,
+    "Name": "Jamaican Dollar",
+    "Code": "JMD",
+    "Countries": [
+      "JM"
+    ]
+  },
+  {
+    "Index": 72,
+    "Name": "Jordanian Dinar",
+    "Code": "JOD",
+    "Countries": [
+      "JO",
+      "PS"
+    ]
+  },
+  {
+    "Index": 73,
+    "Name": "Japanese Yen",
+    "Code": "JPY",
+    "Countries": [
+      "JP"
+    ]
+  },
+  {
+    "Index": 74,
+    "Name": "Kenyan Shilling",
+    "Code": "KES",
+    "Countries": [
+      "KE"
+    ]
+  },
+  {
+    "Index": 75,
+    "Name": "Kyrgystani Som",
+    "Code": "KGS",
+    "Countries": [
+      "KG"
+    ]
+  },
+  {
+    "Index": 76,
+    "Name": "Cambodian Riel",
+    "Code": "KHR",
+    "Countries": [
+      "KH"
+    ]
+  },
+  {
+    "Index": 77,
+    "Name": "Comorian Franc",
+    "Code": "KMF",
+    "Countries": [
+      "KM"
+    ]
+  },
+  {
+    "Index": 78,
+    "Name": "North Korean Won",
+    "Code": "KPW",
+    "Countries": [
+      "KP"
+    ]
+  },
+  {
+    "Index": 79,
+    "Name": "South Korean Won",
+    "Code": "KRW",
+    "Countries": [
+      "KR"
+    ]
+  },
+  {
+    "Index": 80,
+    "Name": "Kuwaiti Dinar",
+    "Code": "KWD",
+    "Countries": [
+      "KW"
+    ]
+  },
+  {
+    "Index": 81,
+    "Name": "Cayman Islands Dollar",
+    "Code": "KYD",
+    "Countries": [
+      "KY"
+    ]
+  },
+  {
+    "Index": 82,
+    "Name": "Kazakhstani Tenge",
+    "Code": "KZT",
+    "Countries": [
+      "KZ"
+    ]
+  },
+  {
+    "Index": 83,
+    "Name": "Laotian Kip",
+    "Code": "LAK",
+    "Countries": [
+      "LA"
+    ]
+  },
+  {
+    "Index": 84,
+    "Name": "Lebanese Pound",
+    "Code": "LBP",
+    "Countries": [
+      "LB"
+    ]
+  },
+  {
+    "Index": 85,
+    "Name": "Sri Lankan Rupee",
+    "Code": "LKR",
+    "Countries": [
+      "LK"
+    ]
+  },
+  {
+    "Index": 86,
+    "Name": "Liberian Dollar",
+    "Code": "LRD",
+    "Countries": [
+      "LR"
+    ]
+  },
+  {
+    "Index": 87,
+    "Name": "Lesotho Loti",
+    "Code": "LSL",
+    "Countries": [
+      "LS"
+    ]
+  },
+  {
+    "Index": 88,
+    "Name": "Lithuanian Litas",
+    "Code": "LTL",
+    "Countries": []
+  },
+  {
+    "Index": 89,
+    "Name": "Latvian Lats",
+    "Code": "LVL",
+    "Countries": []
+  },
+  {
+    "Index": 90,
+    "Name": "Libyan Dinar",
+    "Code": "LYD",
+    "Countries": [
+      "LY"
+    ]
+  },
+  {
+    "Index": 91,
+    "Name": "Moroccan Dirham",
+    "Code": "MAD",
+    "Countries": [
+      "EH",
+      "MA"
+    ]
+  },
+  {
+    "Index": 92,
+    "Name": "Moldovan Leu",
+    "Code": "MDL",
+    "Countries": [
+      "MD"
+    ]
+  },
+  {
+    "Index": 93,
+    "Name": "Malagasy Ariary",
+    "Code": "MGA",
+    "Countries": [
+      "MG"
+    ]
+  },
+  {
+    "Index": 94,
+    "Name": "Macedonian Denar",
+    "Code": "MKD",
+    "Countries": [
+      "MK"
+    ]
+  },
+  {
+    "Index": 95,
+    "Name": "Myanma Kyat",
+    "Code": "MMK",
+    "Countries": [
+      "MM"
+    ]
+  },
+  {
+    "Index": 96,
+    "Name": "Mongolian Tugrik",
+    "Code": "MNT",
+    "Countries": [
+      "MN"
+    ]
+  },
+  {
+    "Index": 97,
+    "Name": "Macanese Pataca",
+    "Code": "MOP",
+    "Countries": [
+      "MO"
+    ]
+  },
+  {
+    "Index": 98,
+    "Name": "Mauritanian ouguiya",
+    "Code": "MRO",
+    "Countries": [
+      "MR"
+    ]
+  },
+  {
+    "Index": 99,
+    "Name": "Mauritian Rupee",
+    "Code": "MUR",
+    "Countries": [
+      "MU"
+    ]
+  },
+  {
+    "Index": 100,
+    "Name": "Maldivian Rufiyaa",
+    "Code": "MVR",
+    "Countries": [
+      "MV"
+    ]
+  },
+  {
+    "Index": 101,
+    "Name": "Malawian Kwacha",
+    "Code": "MWK",
+    "Countries": [
+      "MW"
+    ]
+  },
+  {
+    "Index": 102,
+    "Name": "Mexican Peso",
+    "Code": "MXN",
+    "Countries": [
+      "MX"
+    ]
+  },
+  {
+    "Index": 103,
+    "Name": "Malaysian Ringgit",
+    "Code": "MYR",
+    "Countries": [
+      "MY"
+    ]
+  },
+  {
+    "Index": 104,
+    "Name": "Mozambican Metical",
+    "Code": "MZN",
+    "Countries": [
+      "MZ"
+    ]
+  },
+  {
+    "Index": 105,
+    "Name": "Namibian Dollar",
+    "Code": "NAD",
+    "Countries": [
+      "NA"
+    ]
+  },
+  {
+    "Index": 106,
+    "Name": "Nigerian Naira",
+    "Code": "NGN",
+    "Countries": [
+      "NG"
+    ]
+  },
+  {
+    "Index": 107,
+    "Name": "Nicaraguan C\u00f3rdoba",
+    "Code": "NIO",
+    "Countries": [
+      "NI"
+    ]
+  },
+  {
+    "Index": 108,
+    "Name": "Norwegian Krone",
+    "Code": "NOK",
+    "Countries": [
+      "BV",
+      "NO",
+      "SJ"
+    ]
+  },
+  {
+    "Index": 109,
+    "Name": "Nepalese Rupee",
+    "Code": "NPR",
+    "Countries": [
+      "NP"
+    ]
+  },
+  {
+    "Index": 110,
+    "Name": "New Zealand Dollar",
+    "Code": "NZD",
+    "Countries": [
+      "CK",
+      "NU",
+      "NZ",
+      "PN",
+      "TK"
+    ]
+  },
+  {
+    "Index": 111,
+    "Name": "Omani Rial",
+    "Code": "OMR",
+    "Countries": [
+      "OM"
+    ]
+  },
+  {
+    "Index": 112,
+    "Name": "Panamanian Balboa",
+    "Code": "PAB",
+    "Countries": [
+      "PA"
+    ]
+  },
+  {
+    "Index": 113,
+    "Name": "Peruvian Nuevo Sol",
+    "Code": "PEN",
+    "Countries": [
+      "PE"
+    ]
+  },
+  {
+    "Index": 114,
+    "Name": "Papua New Guinean Kina",
+    "Code": "PGK",
+    "Countries": [
+      "PG"
+    ]
+  },
+  {
+    "Index": 115,
+    "Name": "Philippine Peso",
+    "Code": "PHP",
+    "Countries": [
+      "PH"
+    ]
+  },
+  {
+    "Index": 116,
+    "Name": "Pakistani Rupee",
+    "Code": "PKR",
+    "Countries": [
+      "PK"
+    ]
+  },
+  {
+    "Index": 117,
+    "Name": "Polish Zloty",
+    "Code": "PLN",
+    "Countries": [
+      "PL"
+    ]
+  },
+  {
+    "Index": 118,
+    "Name": "Paraguayan Guarani",
+    "Code": "PYG",
+    "Countries": [
+      "PY"
+    ]
+  },
+  {
+    "Index": 119,
+    "Name": "Qatari Rial",
+    "Code": "QAR",
+    "Countries": [
+      "QA"
+    ]
+  },
+  {
+    "Index": 120,
+    "Name": "Romanian Leu",
+    "Code": "RON",
+    "Countries": [
+      "RO"
+    ]
+  },
+  {
+    "Index": 121,
+    "Name": "Serbian Dinar",
+    "Code": "RSD",
+    "Countries": [
+      "RS"
+    ]
+  },
+  {
+    "Index": 122,
+    "Name": "Russian Ruble",
+    "Code": "RUB",
+    "Countries": [
+      "RU",
+      "SU"
+    ]
+  },
+  {
+    "Index": 123,
+    "Name": "Rwandan Franc",
+    "Code": "RWF",
+    "Countries": [
+      "RW"
+    ]
+  },
+  {
+    "Index": 124,
+    "Name": "Saudi Riyal",
+    "Code": "SAR",
+    "Countries": [
+      "SA"
+    ]
+  },
+  {
+    "Index": 125,
+    "Name": "Solomon Islands Dollar",
+    "Code": "SBD",
+    "Countries": [
+      "SB"
+    ]
+  },
+  {
+    "Index": 126,
+    "Name": "Seychellois Rupee",
+    "Code": "SCR",
+    "Countries": [
+      "SC"
+    ]
+  },
+  {
+    "Index": 127,
+    "Name": "Sudanese Pound",
+    "Code": "SDG",
+    "Countries": [
+      "SD"
+    ]
+  },
+  {
+    "Index": 128,
+    "Name": "Swedish Krona",
+    "Code": "SEK",
+    "Countries": [
+      "SE"
+    ]
+  },
+  {
+    "Index": 129,
+    "Name": "Singapore Dollar",
+    "Code": "SGD",
+    "Countries": [
+      "SG"
+    ]
+  },
+  {
+    "Index": 130,
+    "Name": "Saint Helena Pound",
+    "Code": "SHP",
+    "Countries": [
+      "SH"
+    ]
+  },
+  {
+    "Index": 131,
+    "Name": "Sierra Leonean Leone",
+    "Code": "SLL",
+    "Countries": [
+      "SL"
+    ]
+  },
+  {
+    "Index": 132,
+    "Name": "Somali Shilling",
+    "Code": "SOS",
+    "Countries": [
+      "SO"
+    ]
+  },
+  {
+    "Index": 133,
+    "Name": "Surinamese Dollar",
+    "Code": "SRD",
+    "Countries": [
+      "SR"
+    ]
+  },
+  {
+    "Index": 134,
+    "Name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe dobra",
+    "Code": "STD",
+    "Countries": [
+      "ST"
+    ]
+  },
+  {
+    "Index": 135,
+    "Name": "Salvadoran Col\u00f3n",
+    "Code": "SVC",
+    "Countries": []
+  },
+  {
+    "Index": 136,
+    "Name": "Syrian Pound",
+    "Code": "SYP",
+    "Countries": [
+      "SY"
+    ]
+  },
+  {
+    "Index": 137,
+    "Name": "Swazi Lilangeni",
+    "Code": "SZL",
+    "Countries": [
+      "SZ"
+    ]
+  },
+  {
+    "Index": 138,
+    "Name": "Thai Baht",
+    "Code": "THB",
+    "Countries": [
+      "TH"
+    ]
+  },
+  {
+    "Index": 139,
+    "Name": "Tajikistani Somoni",
+    "Code": "TJS",
+    "Countries": [
+      "TJ"
+    ]
+  },
+  {
+    "Index": 140,
+    "Name": "Turkmenistani Manat",
+    "Code": "TMT",
+    "Countries": [
+      "TM"
+    ]
+  },
+  {
+    "Index": 141,
+    "Name": "Tunisian Dinar",
+    "Code": "TND",
+    "Countries": [
+      "TN"
+    ]
+  },
+  {
+    "Index": 142,
+    "Name": "Tongan Pa\u02bbanga",
+    "Code": "TOP",
+    "Countries": [
+      "TO"
+    ]
+  },
+  {
+    "Index": 143,
+    "Name": "Turkish Lira",
+    "Code": "TRY",
+    "Countries": [
+      "TR"
+    ]
+  },
+  {
+    "Index": 144,
+    "Name": "Trinidad and Tobago Dollar",
+    "Code": "TTD",
+    "Countries": [
+      "TT"
+    ]
+  },
+  {
+    "Index": 145,
+    "Name": "New Taiwan Dollar",
+    "Code": "TWD",
+    "Countries": [
+      "TW"
+    ]
+  },
+  {
+    "Index": 146,
+    "Name": "Tanzanian Shilling",
+    "Code": "TZS",
+    "Countries": [
+      "TZ"
+    ]
+  },
+  {
+    "Index": 147,
+    "Name": "Ukrainian Hryvnia",
+    "Code": "UAH",
+    "Countries": [
+      "UA"
+    ]
+  },
+  {
+    "Index": 148,
+    "Name": "Ugandan Shilling",
+    "Code": "UGX",
+    "Countries": [
+      "UG"
+    ]
+  },
+  {
+    "Index": 149,
+    "Name": "US Dollar",
+    "Code": "USD",
+    "Countries": [
+      "AC",
+      "AS",
+      "BQ",
+      "DG",
+      "EC",
+      "FM",
+      "GU",
+      "HT",
+      "IO",
+      "MH",
+      "MP",
+      "PA",
+      "PR",
+      "PW",
+      "SV",
+      "TC",
+      "TL",
+      "UM",
+      "US",
+      "VG",
+      "VI",
+      "ZW"
+    ]
+  },
+  {
+    "Index": 150,
+    "Name": "Uruguayan Peso",
+    "Code": "UYU",
+    "Countries": [
+      "UY"
+    ]
+  },
+  {
+    "Index": 151,
+    "Name": "Uzbekistan Som",
+    "Code": "UZS",
+    "Countries": [
+      "UZ"
+    ]
+  },
+  {
+    "Index": 152,
+    "Name": "Venezuelan Bol\u00edvar",
+    "Code": "VEF",
+    "Countries": [
+      "VE"
+    ]
+  },
+  {
+    "Index": 153,
+    "Name": "Vietnamese Dong",
+    "Code": "VND",
+    "Countries": [
+      "VN"
+    ]
+  },
+  {
+    "Index": 154,
+    "Name": "Vanuatu Vatu",
+    "Code": "VUV",
+    "Countries": [
+      "VU"
+    ]
+  },
+  {
+    "Index": 155,
+    "Name": "Samoan Tala",
+    "Code": "WST",
+    "Countries": [
+      "WS"
+    ]
+  },
+  {
+    "Index": 156,
+    "Name": "CFA Franc BEAC",
+    "Code": "XAF",
+    "Countries": [
+      "CF",
+      "CG",
+      "CM",
+      "GA",
+      "GQ",
+      "TD"
+    ]
+  },
+  {
+    "Index": 157,
+    "Name": "Silver Ounce",
+    "Code": "XAG",
+    "Countries": []
+  },
+  {
+    "Index": 158,
+    "Name": "Gold Ounce",
+    "Code": "XAU",
+    "Countries": []
+  },
+  {
+    "Index": 159,
+    "Name": "East Caribbean Dollar",
+    "Code": "XCD",
+    "Countries": [
+      "AG",
+      "AI",
+      "DM",
+      "GD",
+      "KN",
+      "LC",
+      "MS",
+      "VC"
+    ]
+  },
+  {
+    "Index": 160,
+    "Name": "Special drawing rights",
+    "Code": "XDR",
+    "Countries": []
+  },
+  {
+    "Index": 161,
+    "Name": "CFA Franc BCEAO",
+    "Code": "XOF",
+    "Countries": [
+      "BF",
+      "BJ",
+      "CI",
+      "GW",
+      "ML",
+      "NE",
+      "SN",
+      "TG"
+    ]
+  },
+  {
+    "Index": 162,
+    "Name": "CFP Franc",
+    "Code": "XPF",
+    "Countries": [
+      "NC",
+      "PF",
+      "WF"
+    ]
+  },
+  {
+    "Index": 163,
+    "Name": "Yemeni Rial",
+    "Code": "YER",
+    "Countries": [
+      "YE"
+    ]
+  },
+  {
+    "Index": 164,
+    "Name": "South African Rand",
+    "Code": "ZAR",
+    "Countries": [
+      "LS",
+      "NA",
+      "ZA",
+      "ZW"
+    ]
+  },
+  {
+    "Index": 165,
+    "Name": "Zambian Kwacha",
+    "Code": "ZMK",
+    "Countries": []
+  },
+  {
+    "Index": 166,
+    "Name": "Zambian Kwacha",
+    "Code": "ZMW",
+    "Countries": [
+      "ZM"
+    ]
+  },
+  {
+    "Index": 167,
+    "Name": "Zimbabwean dollar",
+    "Code": "ZWL",
+    "Countries": []
+  },
+  {
+    "Index": 168,
+    "Name": "Platinum Ounce",
+    "Code": "XPT",
+    "Countries": []
+  },
+  {
+    "Index": 169,
+    "Name": "Palladium Ounce",
+    "Code": "XPD",
+    "Countries": []
+  },
+  {
+    "Index": 170,
+    "Name": "Bitcoin",
+    "Code": "BTC",
+    "Countries": []
+  },
+  {
+    "Index": 171,
+    "Name": "Ethereum",
+    "Code": "ETH",
+    "Countries": []
+  },
+  {
+    "Index": 172,
+    "Name": "Binance",
+    "Code": "BNB",
+    "Countries": []
+  },
+  {
+    "Index": 173,
+    "Name": "Ripple",
+    "Code": "XRP",
+    "Countries": []
+  },
+  {
+    "Index": 174,
+    "Name": "Solana",
+    "Code": "SOL",
+    "Countries": []
+  },
+  {
+    "Index": 175,
+    "Name": "Polkadot",
+    "Code": "DOT",
+    "Countries": []
+  },
+  {
+    "Index": 176,
+    "Name": "Avalanche",
+    "Code": "AVAX",
+    "Countries": []
+  },
+  {
+    "Index": 177,
+    "Name": "Matic Token",
+    "Code": "MATIC",
+    "Countries": []
+  },
+  {
+    "Index": 178,
+    "Name": "Litecoin",
+    "Code": "LTC",
+    "Countries": []
+  },
+  {
+    "Index": 179,
+    "Name": "Cardano",
+    "Code": "ADA",
+    "Countries": []
+  },
+  {
+    "Index": 180,
+    "Name": "Tether",
+    "Code": "USDT",
+    "Countries": []
+  },
+  {
+    "Index": 181,
+    "Name": "USD Coin",
+    "Code": "USDC",
+    "Countries": []
+  },
+  {
+    "Index": 182,
+    "Name": "Dai",
+    "Code": "DAI",
+    "Countries": []
+  },
+  {
+    "Index": 183,
+    "Name": "Arbitrum",
+    "Code": "ARB",
+    "Countries": []
+  },
+  {
+    "Index": 184,
+    "Name": "Optimism",
+    "Code": "OP",
+    "Countries": []
+  },
+  {
+    "Index": 185,
+    "Name": "Venezuelan Bol\u00edvar",
+    "Code": "VES",
+    "Countries": []
+  },
+  {
+    "Index": 186,
+    "Name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe dobra",
+    "Code": "STN",
+    "Countries": []
+  },
+  {
+    "Index": 187,
+    "Name": "Mauritanian ouguiya",
+    "Code": "MRU",
+    "Countries": []
+  }
+]

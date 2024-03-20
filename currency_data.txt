@@ -1,0 +1,188 @@
+Index	Name	Code	Countries
+1	United Arab Emirates Dirham	AED	AE
+2	Afghan Afghani	AFN	AF
+3	Albanian Lek	ALL	AL
+4	Armenian Dram	AMD	AM
+5	NL Antillean Guilder	ANG	CW, SX
+6	Angolan Kwanza	AOA	AO
+7	Argentine Peso	ARS	AR
+8	Australian Dollar	AUD	AU, CC, CX, HM, KI, NF, NR, TV
+9	Aruban Florin	AWG	AW
+10	Azerbaijani Manat	AZN	AZ
+11	Bosnia-Herzegovina Convertible Mark	BAM	BA
+12	Barbadian Dollar	BBD	BB
+13	Bangladeshi Taka	BDT	BD
+14	Bulgarian Lev	BGN	BG
+15	Bahraini Dinar	BHD	BH
+16	Burundian Franc	BIF	BI
+17	Bermudan Dollar	BMD	BM
+18	Brunei Dollar	BND	BN
+19	Bolivian Boliviano	BOB	BO
+20	Brazilian Real	BRL	BR
+21	Bahamian Dollar	BSD	BS
+22	Bhutanese Ngultrum	BTN	BT
+23	Botswanan Pula	BWP	BW, ZW
+24	Belarusian ruble	BYN	
+25	Belarusian Ruble	BYR	BY
+26	Belize Dollar	BZD	BZ
+27	Canadian Dollar	CAD	CA
+28	Congolese Franc	CDF	CD
+29	Swiss Franc	CHF	CH, LI
+30	Unidad de Fomento	CLF	CL
+31	Chilean Peso	CLP	CL
+32	Chinese Yuan	CNY	CN
+33	Coombian Peso	COP	CO
+34	Costa Rican Colón	CRC	CR
+35	Cuban Convertible Peso	CUC	CU
+36	Cuban Peso	CUP	CU
+37	Cape Verdean Escudo	CVE	CV
+38	Czech Republic Koruna	CZK	CZ
+39	Djiboutian Franc	DJF	DJ
+40	Danish Krone	DKK	DK, FO, GL
+41	Dominican Peso	DOP	DO
+42	Algerian Dinar	DZD	DZ
+43	Egyptian Pound	EGP	EG, PS
+44	Eritrean Nakfa	ERN	ER
+45	Ethiopian Birr	ETB	ET
+46	Euro	EUR	AD, AT, AX, BE, BL, CP, CY, DE, EA, EE, ES, EU, FI, FR, FX, GF, GP, GR, IC, IE, IT, LT, LU, LV, MC, ME, MF, MQ, MT, NL, PM, PT, RE, SI, SK, SM, TF, VA, XK, YT, ZW
+47	Fijian Dollar	FJD	FJ
+48	Falkland Islands Pound	FKP	FK
+49	British Pound Sterling	GBP	GB, GG, GS, IM, JE, TA, UK, ZW
+50	Georgian Lari	GEL	GE
+51	Guernsey pound	GGP	
+52	Ghanaian Cedi	GHS	GH
+53	Gibraltar Pound	GIP	GI
+54	Gambian Dalasi	GMD	GM
+55	Guinean Franc	GNF	GN
+56	Guatemalan Quetzal	GTQ	GT
+57	Guyanaese Dollar	GYD	GY
+58	Hong Kong Dollar	HKD	HK
+59	Honduran Lempira	HNL	HN
+60	Croatian Kuna	HRK	HR
+61	Haitian Gourde	HTG	HT
+62	Hungarian Forint	HUF	HU
+63	Indonesian Rupiah	IDR	ID
+64	Israeli New Sheqel	ILS	IL, PS
+65	Manx pound	IMP	
+66	Indian Rupee	INR	BT, IN
+67	Iraqi Dinar	IQD	IQ
+68	Iranian Rial	IRR	IR
+69	Icelandic Króna	ISK	IS
+70	Jersey pound	JEP	
+71	Jamaican Dollar	JMD	JM
+72	Jordanian Dinar	JOD	JO, PS
+73	Japanese Yen	JPY	JP
+74	Kenyan Shilling	KES	KE
+75	Kyrgystani Som	KGS	KG
+76	Cambodian Riel	KHR	KH
+77	Comorian Franc	KMF	KM
+78	North Korean Won	KPW	KP
+79	South Korean Won	KRW	KR
+80	Kuwaiti Dinar	KWD	KW
+81	Cayman Islands Dollar	KYD	KY
+82	Kazakhstani Tenge	KZT	KZ
+83	Laotian Kip	LAK	LA
+84	Lebanese Pound	LBP	LB
+85	Sri Lankan Rupee	LKR	LK
+86	Liberian Dollar	LRD	LR
+87	Lesotho Loti	LSL	LS
+88	Lithuanian Litas	LTL	
+89	Latvian Lats	LVL	
+90	Libyan Dinar	LYD	LY
+91	Moroccan Dirham	MAD	EH, MA
+92	Moldovan Leu	MDL	MD
+93	Malagasy Ariary	MGA	MG
+94	Macedonian Denar	MKD	MK
+95	Myanma Kyat	MMK	MM
+96	Mongolian Tugrik	MNT	MN
+97	Macanese Pataca	MOP	MO
+98	Mauritanian ouguiya	MRO	MR
+99	Mauritian Rupee	MUR	MU
+100	Maldivian Rufiyaa	MVR	MV
+101	Malawian Kwacha	MWK	MW
+102	Mexican Peso	MXN	MX
+103	Malaysian Ringgit	MYR	MY
+104	Mozambican Metical	MZN	MZ
+105	Namibian Dollar	NAD	NA
+106	Nigerian Naira	NGN	NG
+107	Nicaraguan Córdoba	NIO	NI
+108	Norwegian Krone	NOK	BV, NO, SJ
+109	Nepalese Rupee	NPR	NP
+110	New Zealand Dollar	NZD	CK, NU, NZ, PN, TK
+111	Omani Rial	OMR	OM
+112	Panamanian Balboa	PAB	PA
+113	Peruvian Nuevo Sol	PEN	PE
+114	Papua New Guinean Kina	PGK	PG
+115	Philippine Peso	PHP	PH
+116	Pakistani Rupee	PKR	PK
+117	Polish Zloty	PLN	PL
+118	Paraguayan Guarani	PYG	PY
+119	Qatari Rial	QAR	QA
+120	Romanian Leu	RON	RO
+121	Serbian Dinar	RSD	RS
+122	Russian Ruble	RUB	RU, SU
+123	Rwandan Franc	RWF	RW
+124	Saudi Riyal	SAR	SA
+125	Solomon Islands Dollar	SBD	SB
+126	Seychellois Rupee	SCR	SC
+127	Sudanese Pound	SDG	SD
+128	Swedish Krona	SEK	SE
+129	Singapore Dollar	SGD	SG
+130	Saint Helena Pound	SHP	SH
+131	Sierra Leonean Leone	SLL	SL
+132	Somali Shilling	SOS	SO
+133	Surinamese Dollar	SRD	SR
+134	São Tomé and Príncipe dobra	STD	ST
+135	Salvadoran Colón	SVC	
+136	Syrian Pound	SYP	SY
+137	Swazi Lilangeni	SZL	SZ
+138	Thai Baht	THB	TH
+139	Tajikistani Somoni	TJS	TJ
+140	Turkmenistani Manat	TMT	TM
+141	Tunisian Dinar	TND	TN
+142	Tongan Paʻanga	TOP	TO
+143	Turkish Lira	TRY	TR
+144	Trinidad and Tobago Dollar	TTD	TT
+145	New Taiwan Dollar	TWD	TW
+146	Tanzanian Shilling	TZS	TZ
+147	Ukrainian Hryvnia	UAH	UA
+148	Ugandan Shilling	UGX	UG
+149	US Dollar	USD	AC, AS, BQ, DG, EC, FM, GU, HT, IO, MH, MP, PA, PR, PW, SV, TC, TL, UM, US, VG, VI, ZW
+150	Uruguayan Peso	UYU	UY
+151	Uzbekistan Som	UZS	UZ
+152	Venezuelan Bolívar	VEF	VE
+153	Vietnamese Dong	VND	VN
+154	Vanuatu Vatu	VUV	VU
+155	Samoan Tala	WST	WS
+156	CFA Franc BEAC	XAF	CF, CG, CM, GA, GQ, TD
+157	Silver Ounce	XAG	
+158	Gold Ounce	XAU	
+159	East Caribbean Dollar	XCD	AG, AI, DM, GD, KN, LC, MS, VC
+160	Special drawing rights	XDR	
+161	CFA Franc BCEAO	XOF	BF, BJ, CI, GW, ML, NE, SN, TG
+162	CFP Franc	XPF	NC, PF, WF
+163	Yemeni Rial	YER	YE
+164	South African Rand	ZAR	LS, NA, ZA, ZW
+165	Zambian Kwacha	ZMK	
+166	Zambian Kwacha	ZMW	ZM
+167	Zimbabwean dollar	ZWL	
+168	Platinum Ounce	XPT	
+169	Palladium Ounce	XPD	
+170	Bitcoin	BTC	
+171	Ethereum	ETH	
+172	Binance	BNB	
+173	Ripple	XRP	
+174	Solana	SOL	
+175	Polkadot	DOT	
+176	Avalanche	AVAX	
+177	Matic Token	MATIC	
+178	Litecoin	LTC	
+179	Cardano	ADA	
+180	Tether	USDT	
+181	USD Coin	USDC	
+182	Dai	DAI	
+183	Arbitrum	ARB	
+184	Optimism	OP	
+185	Venezuelan Bolívar	VES	
+186	São Tomé and Príncipe dobra	STN	
+187	Mauritanian ouguiya	MRU	

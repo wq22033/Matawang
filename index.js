@@ -19,7 +19,7 @@ app.get("/", async (req, res) => {
     //     res.render("index.ejs", { content: response.data.EUR.value })
     //     console.log(response);
     // });
-    res.render("index.ejs", {active: 'convert', content: 3.1423456 })
+    res.render("index.ejs", {active: 'convert', content: 1.1708, unit: "EUR" })
     
 });
 
@@ -28,6 +28,24 @@ app.get("/charts", async (req, res) => {
     res.render("charts.ejs", {active: 'charts'})
 });
 
+app.post("/convert", async (req, res) => {
+    const from = req.body.fromCurrency;
+    const to = req.body.toCurrency;
+    const amount = req.body.amount;
+    console.log(from, to, amount);
+
+    // client.latest({
+    //   base_currency: from,
+    //   currencies: to
+    // }).then(response => {
+    //     console.log(response.data[to].value * amount);
+    //     res.render("index.ejs", {active: 'convert', content: response.data[to].value * amount, unit: response.data[to].code })
+        
+    // }).catch(error => {
+    //     console.error('Error:', error);
+    //     res.status(500).send('Internal Server Error');
+    // });
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
