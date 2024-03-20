@@ -1,15 +1,4 @@
 <%- include("header.ejs") %>
-    <div class="tab-container">
-        <div class="tab-row">
-            <a href="/" class="row-elem">
-                <img src="/images/coins.svg" alt="coins" width="40px" height="40px">
-                <span class="tab-text custom-font">Convert</span>
-            </a>
-            <a href="/charts" class="row-elem">
-                <img src="/images/chart.svg" alt="chart" width="30px" height="30px">
-                <span class="tab-text custom-font">Charts</span>
-            </a>
-        </div>
         <main class="tab-box-content">
             <div>
                 <div class="grid-container">
@@ -39,7 +28,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="box__InputWrapper">
+                            <div class="box-InputWrapper">
                                 <input type="text" placeholder="Type to search..." spellcheck="false" autocomplete="off" role="combobox" class="text-input box-input" value="">
                             </div>
                         </div>
@@ -70,7 +59,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="box__InputWrapper">
+                            <div class="box-InputWrapper">
                                 <input type="text" placeholder="Type to search..." spellcheck="false" autocomplete="off" role="combobox" class="text-input box-input" value="">
                             </div>
                         </div>
@@ -78,19 +67,18 @@
                     <div></div>
                 </div>
                 <div class="submit-zone">
-                    <div class="miscellany">
+                    <!-- <div class="miscellany">
                         <div class="icon-container">
                             <ion-icon name="information-circle-outline"></ion-icon>
                         </div>
                         <div class="text-container">We use the mid-market rate for our Converter. This is for informational purposes only. You won’t receive this rate when sending money. 
                             <a href="https://transfer.xe.com/account/login/home?icid=XECOM:Home:LoginBut:Login:Glob:HPXEMTLogin" class="link__BaseLink-sc-viajgt-0 gwhWit">Login to view send rates</a>
                         </div>
-                    </div>
+                    </div> -->
                     <button class="button" style="grid-area: buttons;">Convert</button>
                 </div>
             </div>
         </main>
-    </div>
 
     <p>USD to EUR: <%=content.toFixed(4)%></p>
 <%- include("footer.ejs") %>
