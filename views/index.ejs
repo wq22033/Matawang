@@ -1,8 +1,97 @@
 <%- include("header.ejs") %>
+    <div class="tab-container">
+        <div class="tab-row">
+            <a href="/" class="row-elem">
+                <img src="/images/coins.svg" alt="coins" width="40px" height="40px">
+                <span class="tab-text custom-font">Convert</span>
+            </a>
+            <a href="/charts" class="row-elem">
+                <img src="/images/chart.svg" alt="chart" width="30px" height="30px">
+                <span class="tab-text custom-font">Charts</span>
+            </a>
+        </div>
+        <main class="tab-box-content">
+            <div>
+                <div class="grid-container">
+                    <label for="amount" class="label">Amount</label>
+                    <div class="text-input">
+                        <span class="amount-input-number">1.00</span>
+                        <span class="amount-input" style="white-space: nowrap;">
+                            $<input type="text" inputmode="decimal" autocomplete="off" id="amount" class="amount-input-number" value="1.00" style="width: 35px;">
+                        </span>
+                    </div>
+                    <div aria-live="assertive" class="error-text></div>
+                    <label for="FromCurrency" class="label">From</label>
+                    <div class="box-input" id="FromCurrency">
+                        <div class="text-input box-input">
+                            <div class="box-faceplate">
+                                <div class="box-item-icon">
+                                    <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                        <img alt="usd currencies" sizes="100vw" srcset="/svgs/currencies/usd.static.svg 640w, /svgs/currencies/usd.static.svg 750w, /svgs/currencies/usd.static.svg 828w, /svgs/currencies/usd.static.svg 1080w, /svgs/currencies/usd.static.svg 1200w, /svgs/currencies/usd.static.svg 1920w, /svgs/currencies/usd.static.svg 2048w, /svgs/currencies/usd.static.svg 3840w" src="/svgs/currencies/usd.static.svg" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                        <noscript></noscript>
+                                    </span>
+                                </div>
+                                <div id="FromCurrency-descriptiveText" class="box__FaceplateText">
+                                    <span class="dark-text">USD – </span>
+                                    US Dollar
+                                </div>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="box__InputWrapper">
+                                <input type="text" placeholder="Type to search..." spellcheck="false" autocomplete="off" role="combobox" class="text-input box-input" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="styled-div">
+                        <button type="button" class="styled-button">
+                            <ion-icon name="swap-horizontal-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div></div>
+                    <label for="ToCurrency" class="label">To</label>
+                    <div class="box-input" id="FromCurrency">
+                        <div class="text-input box-input">
+                            <div class="box-faceplate">
+                                <div class="box-item-icon">
+                                    <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                        <img alt="usd currencies" sizes="100vw" srcset="/svgs/currencies/usd.static.svg 640w, /svgs/currencies/usd.static.svg 750w, /svgs/currencies/usd.static.svg 828w, /svgs/currencies/usd.static.svg 1080w, /svgs/currencies/usd.static.svg 1200w, /svgs/currencies/usd.static.svg 1920w, /svgs/currencies/usd.static.svg 2048w, /svgs/currencies/usd.static.svg 3840w" src="/svgs/currencies/usd.static.svg" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                        <noscript></noscript>
+                                    </span>
+                                </div>
+                                <div id="FromCurrency-descriptiveText" class="box__FaceplateText">
+                                    <span class="dark-text">EUR – </span>
+                                    Euro
+                                </div>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="box__InputWrapper">
+                                <input type="text" placeholder="Type to search..." spellcheck="false" autocomplete="off" role="combobox" class="text-input box-input" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="submit-zone">
+                    <div class="miscellany">
+                        <div class="icon-container">
+                            <ion-icon name="information-circle-outline"></ion-icon>
+                        </div>
+                        <div class="text-container">We use the mid-market rate for our Converter. This is for informational purposes only. You won’t receive this rate when sending money. 
+                            <a href="https://transfer.xe.com/account/login/home?icid=XECOM:Home:LoginBut:Login:Glob:HPXEMTLogin" class="link__BaseLink-sc-viajgt-0 gwhWit">Login to view send rates</a>
+                        </div>
+                    </div>
+                    <button class="button" style="grid-area: buttons;">Convert</button>
+                </div>
+            </div>
+        </main>
+    </div>
 
-
-<p>USD to EUR: <%=content.toFixed(4)%></p>
-
-
+    <p>USD to EUR: <%=content.toFixed(4)%></p>
 <%- include("footer.ejs") %>
 

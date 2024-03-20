@@ -12,13 +12,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
     
-    client.latest({
-        base_currency: 'USD',
-        currencies: 'EUR'
-    }).then(response => {
-        res.render("index.ejs", { content: response.data.EUR.value })
-        console.log(response);
-    });
+    // client.latest({
+    //     base_currency: 'USD',
+    //     currencies: 'EUR'
+    // }).then(response => {
+    //     res.render("index.ejs", { content: response.data.EUR.value })
+    //     console.log(response);
+    // });
+    res.render("index.ejs", { content: 3.1423456 })
     
 });
 
