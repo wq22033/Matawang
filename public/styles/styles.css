@@ -11,10 +11,10 @@ html, body {
   height: 100%;
 }
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* flex-direction: column;
   justify-content: stretch;
-  min-height: 100vh;
+  min-height: 100vh; */
   background-image: linear-gradient(
         rgba(253, 208, 76, 0.9),
         rgba(255, 109, 85, 0.9),
@@ -30,6 +30,7 @@ main {
   text-align: center;
   padding: 5vmin;
   flex: 1 0 auto;
+  z-index: 5;
 }
 /*----- Header -----*/
 .logo{
@@ -84,26 +85,34 @@ main {
     padding: 40px 0;
     border-radius: 0 0 5px 5px;
     width: 100%;
+    align-items: center;
+    justify-content: center;;
 }
 .white-svg {
     filter: brightness(0) invert(0.55);
 }
 
 /*------ Content -------*/
-form .top-row, form .bottom-row{
-    position: relative;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
 form {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     margin: 0 50px;
+}
+
+form .top-row{
+    width: 100%;
+    display: grid;
+    gap: 4px 16px;
+    grid-auto-flow: row;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) auto minmax(100px, 1fr);
+    grid-template-rows: auto [ input-row-start ] auto [ input-row-end ] auto;
+}
+
+form .bottom-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 form :where(input, select, button){
@@ -119,17 +128,12 @@ form p{
     text-align: left;
 }
 
-form .amount, .bottom-row{
-    margin: 15px;
-}
-
 form input{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     height: 50px;
-    font-size: 17px;
-    font-weight: 500px;
+    font-size: 20px;
     padding: 15px;
     border: 1px solid #999;
 }
@@ -139,39 +143,51 @@ form input:focus{
     border: 2px solid rgba(60, 106, 152);
 }
 
-form .drop-list{
-    display: flex;
-    align-items: center;
-    width: 400px;
-    justify-content: space-between;
-}
-
-.drop-list .select-box{
-    display: flex;
+form .drop-list .select-box{
+    display: inline-flex;
+    width: 100%;
     height: 50px;
-    width: 120px;
-    border-radius: 5px;
     align-items: center;
+    border-radius: 5px;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 0 12px;
     border: 1px solid #999;
 }
 
 .select-box select{
-    width: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    padding-left: 5px;
+    background: none;
+}
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+    background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
 }
 
 .select-box img{
-    max-width: 30px;
+    max-width: 50px;
 }
 
 .drop-list .icon{
     cursor: pointer;
-    font-size: 22px;
-    margin-top: 30px;
+    font-size: 25px;
+    margin-top: 68px;
 }
 
 form .exchange-rate{
     font-size: 20px;
+    margin-top: 10px;
 }
 
 form button{
@@ -186,16 +202,121 @@ form button{
     background-color: rgba(76, 145, 212);
 }
 
-/*------ footer -------*/
-footer {
+.wrapper{
     position: relative;
-    width: 100%;
-    min-height: 100px;
-    padding-bottom: 20px;
+}
+
+.select-btn, li{
     display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.select-btn{
+    height: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #999;
+    justify-content: space-between;
+}
+
+.select-btn ion-icon{
+    font-size: 25px;
+    transition: transform 0.3s linear;
+}
+.wrapper.active .select-btn ion-icon{
+    transform: rotate(-180deg);
+}
+.content{
+    display: none;
+    max-height: 260px;
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: #ffffff;
+}
+.wrapper.active .content{
+    display: block;
+    position: absolute;
+    width:auto;
+    max-width: 350px;
+  }
+.content .search{
+    position: relative;
+}
+.search ion-icon{
+    top: 50%;
+    left: 15px;
+    color: #999;
+    font-size: 20px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.search input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 0 20px 0 43px;
+    border: 1px solid #B3B3B3;
+}
+.search input:focus{
+    padding-left: 42px;
+    border: 2px solid #4285f4;
+}
+.search input::placeholder{
+    color: #bfbfbf;
+}
+.content .options{
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.options::-webkit-scrollbar{
+    width: 7px;  
+}
+.options::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb:hover{
+    background: #b3b3b3;
+}
+.options li{
+    text-align: left;
+    height: 50px;
+    padding: 0 13px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: -40px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis;
+}
+
+.options li:hover{
+    background: #f9f9f9;
+}
+
+  /*------ footer -------*/
+footer {
+    width: 100%;
+    max-height: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 0;
   }
 .social_icon,
 .menu {
@@ -221,23 +342,10 @@ footer .social_icon li a:hover {
   transform: translateY(-15px);
   color: white;
 }
-footer .menu li a {
-  font-size: 1.2em;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-  text-decoration: none;
-  opacity: 0.75;
-  color: white;
-}
-footer .menu li a:hover {
-  opacity: 1;
-  color: darkblue;
-}
+
 footer p {
     color: white;
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 5px;
     font-size: 1.1em;
   }

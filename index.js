@@ -1,11 +1,12 @@
 import express from "express";
-import axios from "axios";
 import bodyParser from "body-parser";
 import currencyapi from '@everapi/currencyapi-js'
+import fs from 'fs';
 
 const client = new currencyapi('cur_live_ENfJ9anh2DL7MEfVoJ5TEkx8B1WoZYqQrYJLGKBl')
 const app = express();
 const port = 3000;
+const currencies = JSON.parse(fs.readFileSync('currency_data.json', 'utf8'));
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,13 +14,24 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", async (req, res) => {
     
     // client.latest({
-    //     base_currency: 'USD',
+    //     base_currency: 'GBP',
     //     currencies: 'EUR'
     // }).then(response => {
     //     res.render("index.ejs", { content: response.data.EUR.value })
     //     console.log(response);
     // });
-    res.render("index.ejs", {active: 'convert', content: 1.1708, unit: "EUR" })
+
+    
+
+    res.render("index.ejs", {
+      countries: countries,
+      currencies: currencies,
+      active: 'convert', 
+      famount: 1,
+      funit: 'GBP',
+      tamount: 1.1701,
+      tunit: 'EUR'
+    })
     
 });
 
@@ -50,6 +62,13 @@ app.post("/convert", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+let countries = ["Afghanistan", "Algeria", "Argentina", "Australia", "Bangladesh", "Belgium", "Bhutan",
+                 "Brazil", "Canada", "China", "Denmark", "Ethiopia", "Finland", "France", "Germany",
+                 "Hungary", "Iceland", "India", "Indonesia", "Iran", "Italy", "Japan", "Malaysia",
+                 "Maldives", "Mexico", "Morocco", "Nepal", "Netherlands", "Nigeria", "Norway", "Pakistan",
+                 "Peru", "Russia", "Romania", "South Africa", "Spain", "Sri Lanka", "Sweden", "Switzerland",
+                 "Thailand", "Turkey", "Uganda", "Ukraine", "United States", "United Kingdom", "Vietnam"];
 
 
 let country_list = {

@@ -186,3 +186,8 @@ Index	Name	Code	Countries
 185	Venezuelan Bolívar	VES	
 186	São Tomé and Príncipe dobra	STN	
 187	Mauritanian ouguiya	MRU	
+
+<% Object.keys(country_list).forEach(function(key) { %>
+                                    <% var selected = key === "GBP" ? "selected" : ""; %>
+                                    <option value="<%= key %>" <%= selected %>><%= key %></option>
+                                <% }); %>
