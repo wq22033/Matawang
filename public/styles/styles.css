@@ -1,28 +1,13 @@
-:root {
-    --josefin-sans-font: "Josefin Sans", sans-serif;
-}
- 
-.custom-font {
-    font-family: var(--josefin-sans-font);
-    font-optical-sizing: auto;
-    font-style: normal;
-}
 html, body {
   height: 100%;
 }
 body {
   display: grid;
-  /* flex-direction: column;
-  justify-content: stretch;
-  min-height: 100vh; */
   background-image: linear-gradient( to right,
         /* rgba(253, 208, 76, 0.9),
         rgba(255, 109, 85, 0.9),
         rgba(76, 145, 212, 0.9),
-        rgba(60, 106, 152, 0.9),
-        rgba(76, 145, 212, 0.9),
-        rgba(255, 109, 85, 0.9),
-        rgba(253, 208, 76, 0.9) */
+        rgba(60, 106, 152, 0.9) */
         #F5E8C7,
         #818FB4,
         #435585,
@@ -39,11 +24,9 @@ main {
   flex: 1 0 auto;
   z-index: 5;
 }
-
 footer{
     margin-top: 75px;
 }
-
 footer.active {
     margin-top: 150px;
     background-color: transparent;
@@ -108,14 +91,13 @@ footer.active {
     filter: brightness(0) invert(0.55);
 }
 
-/*------ Content -------*/
+/*------ Converter Content -------*/
 form {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     margin: 0 50px;
 }
-
 form .top-row{
     width: 100%;
     display: grid;
@@ -124,28 +106,24 @@ form .top-row{
     grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) auto minmax(100px, 1fr);
     grid-template-rows: auto [ input-row-start ] auto [ input-row-end ] auto;
 }
-
 form .bottom-row{
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-
 form :where(input, select, button){
     width: 100%;
     outline: none;
     border: none;
     border-radius: 5px;
 }
-
 form p{
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 5px;
     text-align: left;
 }
-
 form input{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -155,38 +133,15 @@ form input{
     padding: 15px;
     border: 1px solid #999;
 }
-
 form input:focus{
     padding: 0 15px;
     border: 2px solid rgba(60, 106, 152);
 }
-
-.select-box select{
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 17px;
-    padding-left: 5px;
-    background: none;
-}
-.select-box select::-webkit-scrollbar{
-    width: 8px;
-}
-.select-box select::-webkit-scrollbar-track{
-    background: #fff;
-}
-.select-box select::-webkit-scrollbar-thumb{
-    background: #888;
-    border-radius: 8px;
-    border-right: 2px solid #ffffff;
-}
-
 .swap{
     cursor: pointer;
     font-size: 25px;
     margin-top: 68px;
 }
-
 form .rate{
     text-align: left;
     display: inline-block;
@@ -195,7 +150,6 @@ form .rate{
     padding: 10px;
     border-radius: 5px;
 }
-
 form button{
     margin-top: 20px;
     font-family: "Poppins", sans-serif;
@@ -208,21 +162,17 @@ form button{
     cursor: pointer;
     background-color: #007aff;
 }
-
 .wrapper{
     position: relative;
 }
-
 .select-btn, li{
     display: flex;
     cursor: pointer;
     align-items: center;
 }
-
 .wrapper .select-btn{
     display: flex;
 }
-
 .select-btn{
     height: 50px;
     padding: 0 10px;
@@ -232,17 +182,14 @@ form button{
     border: 1px solid #999;
     justify-content: space-between;
 }
-
 .select-btn img, .options img{
     max-width: 50px;
     border: 1px solid gainsboro;
 }
-
 .select-btn span{
     white-space: nowrap;
     overflow: hidden;
 }
-
 .select-btn ion-icon{
     font-size: 20px;
     transition: transform 0.3s linear;
@@ -263,7 +210,7 @@ form button{
     display: block;
     position: absolute;
     width: 100%;
-  }
+}
 .content .search{
     position: relative;
 }
@@ -276,7 +223,6 @@ form button{
     transform: translateY(-50%);
     position: absolute;
 }
-
 .search input{
     height: 50px;
     width: 100%;
@@ -324,12 +270,13 @@ form button{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .options li:hover{
     background: #f9f9f9;
 }
+/*------ Charts Content -------*/
 
-  /*------ footer -------*/
+
+/*------ footer -------*/
 footer {
     width: 100%;
     flex-direction: column;
@@ -361,10 +308,12 @@ footer .social_icon li a:hover {
   transform: translateY(-15px);
   color: white;
 }
-
 footer p {
     color: white;
     text-align: center;
     margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     font-size: 1.1em;
-  }
+}

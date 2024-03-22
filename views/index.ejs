@@ -70,7 +70,11 @@
                 <div class="rate">
                     <span style="font-size: 20px;"><%= famount.toFixed(2) %> <%= funit %>&nbsp;=</span>
                     <br>
-                    <span style="font-size: 40px; font-weight: 900;"><%= tamount.toFixed(6) %> <%= tunit %></span>
+                    <!-- <span style="font-size: 40px; font-weight: 900;"><%= tamount.toFixed(6) %> <%= tunit %></span> -->
+                    <span style="font-size: 40px; font-weight: 900;">
+                        <%= Number(tamount).toFixed(2) %><span style="color: rgb(183, 178, 178);"><%= String(Number(tamount).toFixed(6)).split('.')[1].substring(2) %></span>
+                        <%= tunit %>
+                    </span>
                 </div>
                 <button type="submit" value="GET" class="convert-button" formaction="/convert">Convert</button>
             </div>
