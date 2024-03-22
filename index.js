@@ -47,26 +47,26 @@ app.get("/", async (req, res) => {
     
 });
 
-app.get("/charts", async (req, res) => {
+// app.get("/charts", async (req, res) => {
 
-  res.render("footer.ejs", { currencies: currencies }, (err, footerHTML) => {
-    if (err) {
-        console.error("Error rendering footer.ejs:", err);
-        return res.status(500).send("Error rendering footer.ejs");
-    }
-    res.render("charts.ejs", {
-       active: 'charts'
-    }, (err, chartsEJS) => {
-        if (err) {
-            console.error("Error rendering charts.ejs:", err);
-            return res.status(500).send("Error rendering charts.ejs");
-        }
-        res.send(chartsEJS);
-    });
-});
+//   res.render("footer.ejs", { currencies: currencies }, (err, footerHTML) => {
+//     if (err) {
+//         console.error("Error rendering footer.ejs:", err);
+//         return res.status(500).send("Error rendering footer.ejs");
+//     }
+//     res.render("charts.ejs", {
+//        active: 'charts'
+//     }, (err, chartsEJS) => {
+//         if (err) {
+//             console.error("Error rendering charts.ejs:", err);
+//             return res.status(500).send("Error rendering charts.ejs");
+//         }
+//         res.send(chartsEJS);
+//     });
+// });
 
-    res.render("charts.ejs", {active: 'charts'})
-});
+//     res.render("charts.ejs", {active: 'charts'})
+// });
 
 app.post("/convert", async (req, res) => {
     const from = req.body.fromCurrency;
