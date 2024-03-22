@@ -3,7 +3,8 @@ import bodyParser from "body-parser";
 import currencyapi from '@everapi/currencyapi-js'
 import fs from 'fs';
 
-const client = new currencyapi('cur_live_ENfJ9anh2DL7MEfVoJ5TEkx8B1WoZYqQrYJLGKBl')
+const API_KEY = process.env.API_KEY
+const client = new currencyapi(API_KEY)
 const app = express();
 const port = 3000;
 const currencies = JSON.parse(fs.readFileSync('currency_data.json', 'utf8'));
