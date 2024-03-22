@@ -4,6 +4,9 @@
     <img src="/public/images/logo-github.png" height="170">
 </p>
 
+## Summary
+The Mata Wang is a currency exchange web application that simplifies the process of converting currencies. Built using EJS, CSS, and JavaScript, it retrieves real-time exchange rates through the @everapi/currencyapi-js. With its user-friendly interface and swift results, Mata Wang assists users in exchanging currencies seamlessly. In the future, I aim to enhance its functionality by introducing features such as user authentication, interactive charts, and language support.
+
 ## Getting Started
 ### Running the Website Locally
 #### Prerequisites
@@ -33,3 +36,5 @@ node index.js
 ### Accessing the Deployed Website
 
 The latest version of the website is deployed and hosted on Render. You can access it by clicking [here](https://matawang.onrender.com).
+
+## Interface Preview
