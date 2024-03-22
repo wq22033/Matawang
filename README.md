@@ -38,4 +38,7 @@ node index.js
 The latest version of the website is deployed and hosted on Render. You can access it by clicking [here](https://matawang.onrender.com).
 
 ## Interface Preview
-<img src="/public/images/preview1">
+<div style="display: flex;">
+    <img src="/public/images/preview1.png" style="width: 50%;">
+    <img src="/public/images/preview2.png" style="width: 50%;">
+</div>
