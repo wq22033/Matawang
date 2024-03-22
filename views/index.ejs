@@ -10,9 +10,9 @@
                     <p>From</p>
                     <div class="wrapper fwrapper">
                         <div class="select-btn f-btn">
-                            <img src="/images/flags/gb.png" alt="GBP">
-                            <span style="padding-left: 7px;">GBP - British Pound</span>
-                            <input id="fromCurrencyCode" type="hidden" name="fromCurrency" value="GBP">
+                            <img src="/images/flags/<%= fCountry %>.png" alt="<%= fCode %>">
+                            <span style="padding-left: 7px;"><b><%= fCode %></b> &nbsp;-&nbsp;<%= fName %></span>
+                            <input id="fromCurrencyCode" type="hidden" name="fromCurrency" value="<%= fCode %>">
                             <ion-icon name="chevron-down-outline"></ion-icon>
                         </div>
                         <div class="content">
@@ -42,9 +42,9 @@
                     <p>To</p>
                     <div class="wrapper twrapper">
                         <div class="select-btn t-btn">
-                            <img src="/images/flags/eu.png" alt="EUR">
-                            <span style="padding-left: 7px;" name="to">EUR - Euro</span>
-                            <input id="toCurrencyCode" type="hidden" name="toCurrency" value="GBP">
+                            <img src="/images/flags/<%= tCountry %>.png" alt="<%= tCode %>">
+                            <span style="padding-left: 7px;"><b><%= tCode %></b> &nbsp;-&nbsp;<%= tName %></span>
+                            <input id="toCurrencyCode" type="hidden" name="toCurrency" value="<%= tCode %>">
                             <ion-icon name="chevron-down-outline"></ion-icon>
                         </div>
                         <div class="content">
@@ -68,12 +68,11 @@
             </div>
             <div class="bottom-row">
                 <div class="rate">
-                    <span style="font-size: 20px;"><%= famount.toFixed(2) %> <%= funit %>&nbsp;=</span>
+                    <span style="font-size: 20px;"><%= fAmount.toFixed(2) %> <%= fName %>&nbsp;=</span>
                     <br>
-                    <!-- <span style="font-size: 40px; font-weight: 900;"><%= tamount.toFixed(6) %> <%= tunit %></span> -->
                     <span style="font-size: 40px; font-weight: 900;">
-                        <%= Number(tamount).toFixed(2) %><span style="color: rgb(183, 178, 178);"><%= String(Number(tamount).toFixed(6)).split('.')[1].substring(2) %></span>
-                        <%= tunit %>
+                        <%= Number(tAmount).toFixed(2) %><span style="color: rgb(183, 178, 178);"><%= String(Number(tAmount).toFixed(6)).split('.')[1].substring(2) %></span>
+                        <%= tName %>
                     </span>
                 </div>
                 <button type="submit" value="GET" class="convert-button" formaction="/convert">Convert</button>

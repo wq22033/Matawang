@@ -1,4 +1,4 @@
-import express from "express";
+import express, { response } from "express";
 import bodyParser from "body-parser";
 import currencyapi from '@everapi/currencyapi-js'
 import fs from 'fs';
@@ -13,13 +13,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
     
-    // client.latest({
-    //     base_currency: 'GBP',
-    //     currencies: 'EUR'
-    // }).then(response => {
-    //     res.render("index.ejs", { content: response.data.EUR.value })
-    //     console.log(response);
-    // });
+    client.latest({
+        base_currency: 'GBP',
+        currencies: 'EUR'
+    }).then(response => {
+        
+    
 
     res.render("footer.ejs", { currencies: currencies }, (err, footerHTML) => {
       if (err) {
@@ -31,10 +30,14 @@ app.get("/", async (req, res) => {
       res.render("index.ejs", {
           currencies: currencies,
           active: 'convert', 
-          famount: 1,
-          funit: 'Bristish Pound',
-          tamount: 1.1701,
-          tunit: 'Euro'
+          fCountry: 'gb',
+          fCode: 'GBP',
+          fAmount: 1, 
+          fName: 'British Pound Sterling',
+          tCountry: 'eu',
+          tCode: 'EUR',
+          tAmount: response.data.EUR.value, 
+          tName: 'Euro'
       }, (err, indexHTML) => {
           if (err) {
               console.error("Error rendering index.ejs:", err);
@@ -44,7 +47,56 @@ app.get("/", async (req, res) => {
           res.send(indexHTML);
       });
   });
-    
+    });
+});
+
+
+
+app.post("/convert", async (req, res) => {
+    let fCode = req.body.fromCurrency;
+    let tCode = req.body.toCurrency;
+    const amount = req.body.amount;
+
+    // Split on dash and take the first part as the currency code
+    fCode = fCode.split('-')[0].trim();
+    tCode = tCode.split('-')[0].trim();
+
+    // Find the currency with the matching code
+    const fCurrency = currencies.find(currency => currency.Code === fCode);
+    const tCurrency = currencies.find(currency => currency.Code === tCode);
+
+    // Find the first country on the list
+    const fCountry = fCurrency ? fCurrency.Countries[0] : null;
+    const tCountry = tCurrency ? tCurrency.Countries[0] : null;
+
+    // Find the name of the currency
+    const fName = fCurrency ? fCurrency.Name : null;
+    const tName = tCurrency ? tCurrency.Name : null;
+
+    client.latest({
+      base_currency: fCode,
+      currencies: tCode
+    }).then(response => {
+        res.render("index.ejs", { 
+          currencies: currencies,
+          active: 'convert', 
+          fCountry: fCountry,
+          fCode: fCode,
+          fAmount: Math.round(amount),
+          fName: fName,
+          tCountry: tCountry,
+          tCode: tCode,
+          tAmount: response.data[tCode].value * amount, 
+          tName: tName })
+        
+    }).catch(error => {
+        console.error('Error:', error);
+        res.status(500).send('Internal Server Error');
+    });
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
 
 // app.get("/charts", async (req, res) => {
@@ -67,41 +119,3 @@ app.get("/", async (req, res) => {
 
 //     res.render("charts.ejs", {active: 'charts'})
 // });
-
-app.post("/convert", async (req, res) => {
-    const from = req.body.fromCurrency;
-    const to = req.body.toCurrency;
-    const amount = req.body.amount;
-    // console.log(from, to, amount);
-
-    // Find the currency with the matching code
-    const fromCurrency = currencies.find(currency => currency.Code === from);
-    const toCurrency = currencies.find(currency => currency.Code === to);
-
-    // Now you can access the name of the currency
-    const fromCurrencyName = fromCurrency ? fromCurrency.Name : null;
-    const toCurrencyName = toCurrency ? toCurrency.Name : null;
-
-    // client.latest({
-    //   base_currency: from,
-    //   currencies: to
-    // }).then(response => {
-    //     console.log(response.data[to].value * amount);
-    //     console.log(response)
-    //     res.render("index.ejs", { 
-    //       currencies: currencies,
-    //       active: 'convert', 
-    //       famount: Math.round(amount),
-    //       funit: fromCurrencyName,
-    //       tamount: response.data[to].value * amount, 
-    //       tunit: toCurrencyName })
-        
-    // }).catch(error => {
-    //     console.error('Error:', error);
-    //     res.status(500).send('Internal Server Error');
-    // });
-});
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
