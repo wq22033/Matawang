@@ -4,19 +4,23 @@
         <div></div>
     <ul class="social_icon">
         <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/nur-ramizah-adnan/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
     </ul>
-    <p class="copyright custom-font">&copy; MATA WANG by @rhamybellie</p>
+    <p class="copyright custom-font">&copy; MATA WANG by <b>ramy 😁✌🏻</b></p>
     </footer>
     <script>
 
         const fwrapper = document.querySelector(".fwrapper");
         const twrapper = document.querySelector(".twrapper");
+
         const footer = document.querySelector('footer');
+
         const fselect = document.querySelector(".f-btn");
         const tselect = document.querySelector(".t-btn");
+
         const fsearch = fwrapper.querySelector("input");
         const tsearch = twrapper.querySelector("input");
+
         const foptions = fwrapper.querySelector(".options");
         const toptions = twrapper.querySelector(".options");
 
@@ -29,8 +33,10 @@
 
             // Get the new image source and text from the selected element
             const newImgSrc = selected.querySelector('img').src;
-            console.log(newImgSrc);
             const newText = selected.querySelector('span').innerText;
+
+            // Get the hidden input element
+            const hiddenInput = document.getElementById(ToFrom === 'from' ? 'fromCurrencyCode' : 'toCurrencyCode');
 
             search.value = "";
             wrapper.classList.remove("active");
@@ -38,6 +44,9 @@
             // Update the image source and text in the select element
             select.querySelector('img').src = newImgSrc;
             select.querySelector('span').innerText = newText;
+
+            // Update the value of the hidden input
+            hiddenInput.value = newText.split(' ')[0];
         }
 
         function swap() {
@@ -93,14 +102,14 @@
             let searchWord = tsearch.value.toLowerCase();
             
             arr = currencies.filter(data => {
-                return data.Name.toLowerCase().startsWith(searchWord) || data.Code.toLowerCase().startsWith(searchWord);
+                return data.Name.toLowerCase().includes(searchWord) || data.Code.toLowerCase().includes(searchWord);
             }).map(data => {
                 let isSelected = data.Name === tselect.firstElementChild.innerText ? "selected" : "";
                 if (data.Countries.length === 0) {
                     return;
                 } else {
                     return `
-                        <li onclick="updateName('from', this)" code="${data.Code}" class="${isSelected}">
+                        <li onclick="updateName('to', this)" code="${data.Code}" class="${isSelected}">
                             <img src="/images/flags/${data.Countries[0].toLowerCase()}.png" alt="${data.Code}">
                             <span style="padding-left: 7px;"><b>${data.Code}</b>&nbsp;-&nbsp;${data.Name}</span>
                         </li>`;
@@ -117,7 +126,6 @@
                 footer.classList.remove('active');
             }
         });
-
 
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -6,34 +6,33 @@
                     <p>Amount</p>
                     <input type="number" value="1.00" name="amount">
                 </div>
-                    <div class="from">
-                        <p>From</p>
-                        <div class="wrapper fwrapper">
-                            <div class="select-btn f-btn">
-                                <img src="/images/flags/gb.png" alt="GBP">
-                                <span style="padding-left: 7px;">GBP - British Pound</span>
-                                <ion-icon name="chevron-down-outline"></ion-icon>
+                <div class="from">
+                    <p>From</p>
+                    <div class="wrapper fwrapper">
+                        <div class="select-btn f-btn">
+                            <img src="/images/flags/gb.png" alt="GBP">
+                            <span style="padding-left: 7px;">GBP - British Pound</span>
+                            <input id="fromCurrencyCode" type="hidden" name="fromCurrency" value="GBP">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <div class="content">
+                            <div class="search" id="search">
+                                <ion-icon name="search-outline"></ion-icon>
+                                <input spellcheck="false" type="text" placeholder="Search">
                             </div>
-                            <div class="content">
-                                <div class="search" id="search">
-                                    <ion-icon name="search-outline"></ion-icon>
-                                    <input spellcheck="false" type="text" placeholder="Search">
-                                </div>
-                                <ul class="options foptions" id="currencyList">
-                                    <div>
-                                        <% currencies.forEach(currency => { %>
-                                            <% if (currency.Countries.length != 0) { %>
-                                                <li onclick="updateName('from',this)"" code="<%= currency.Code %>">
-                                                    <img src="/images/flags/<%= currency.Countries[0].toLowerCase() %>.png" alt="<%= currency.Code %>">
-                                                    <span style="padding-left: 7px;"><b><%= currency.Code %></b> &nbsp;-&nbsp;<%= currency.Name %></span>
-                                                </li>
-                                            <% } %>
-                                        <% }); %>
-                                    </div>
-                                </ul>
-                            </div>
+                            <ul class="options foptions" type="text" id="fromCurrencyList">
+                                <% currencies.forEach(currency => { %>
+                                    <% if (currency.Countries.length != 0) { %>
+                                        <li onclick="updateName('from',this)" code="<%= currency.Code %>" >
+                                            <img src="/images/flags/<%= currency.Countries[0].toLowerCase() %>.png" alt="<%= currency.Code %>">
+                                            <span style="padding-left: 7px;"><b><%= currency.Code %></b> &nbsp;-&nbsp;<%= currency.Name %></span>
+                                        </li>
+                                    <% } %>
+                                <% }); %>
+                            </ul>
                         </div>
                     </div>
+                </div>
                 <div class = "swap">
                     <div class="icon">
                         <ion-icon name="swap-horizontal-outline"></ion-icon>
@@ -44,7 +43,8 @@
                     <div class="wrapper twrapper">
                         <div class="select-btn t-btn">
                             <img src="/images/flags/eu.png" alt="EUR">
-                            <span style="padding-left: 7px;">EUR - Euro</span>
+                            <span style="padding-left: 7px;" name="to">EUR - Euro</span>
+                            <input id="toCurrencyCode" type="hidden" name="toCurrency" value="GBP">
                             <ion-icon name="chevron-down-outline"></ion-icon>
                         </div>
                         <div class="content">
@@ -70,7 +70,7 @@
                 <div class="rate">
                     <span style="font-size: 20px;"><%= famount.toFixed(2) %> <%= funit %>&nbsp;=</span>
                     <br>
-                    <span style="font-size: 50px; font-weight: 900;"><%= tamount.toFixed(6) %> <%= tunit %></span>
+                    <span style="font-size: 40px; font-weight: 900;"><%= tamount.toFixed(6) %> <%= tunit %></span>
                 </div>
                 <button type="submit" value="GET" class="convert-button" formaction="/convert">Convert</button>
             </div>

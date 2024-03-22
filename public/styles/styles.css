@@ -15,11 +15,18 @@ body {
   /* flex-direction: column;
   justify-content: stretch;
   min-height: 100vh; */
-  background-image: linear-gradient(
-        rgba(253, 208, 76, 0.9),
+  background-image: linear-gradient( to right,
+        /* rgba(253, 208, 76, 0.9),
         rgba(255, 109, 85, 0.9),
         rgba(76, 145, 212, 0.9),
-        rgba(60, 106, 152, 0.9)
+        rgba(60, 106, 152, 0.9),
+        rgba(76, 145, 212, 0.9),
+        rgba(255, 109, 85, 0.9),
+        rgba(253, 208, 76, 0.9) */
+        #F5E8C7,
+        #818FB4,
+        #435585,
+        #363062
     );
     background-attachment: fixed;
 }
@@ -33,8 +40,12 @@ main {
   z-index: 5;
 }
 
+footer{
+    margin-top: 75px;
+}
+
 footer.active {
-    margin-top: 250px;
+    margin-top: 150px;
     background-color: transparent;
 }
 /*----- Header -----*/
@@ -321,7 +332,6 @@ form button{
   /*------ footer -------*/
 footer {
     width: 100%;
-;
     flex-direction: column;
     justify-content: center;
     align-items: center;
