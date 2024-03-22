@@ -21,21 +21,63 @@ app.get("/", async (req, res) => {
     //     console.log(response);
     // });
 
-    
+    // res.render("footer.ejs",{
+    //   currencies: currencies
+    // })
 
-    res.render("index.ejs", {
-      countries: countries,
-      currencies: currencies,
-      active: 'convert', 
-      famount: 1,
-      funit: 'GBP',
-      tamount: 1.1701,
-      tunit: 'EUR'
-    })
+    // res.render("index.ejs", {
+    //   countries: countries,
+    //   currencies: currencies,
+    //   active: 'convert', 
+    //   famount: 1,
+    //   funit: 'GBP',
+    //   tamount: 1.1701,
+    //   tunit: 'EUR'
+    // })
+
+    res.render("footer.ejs", { currencies: currencies }, (err, footerHTML) => {
+      if (err) {
+          console.error("Error rendering footer.ejs:", err);
+          return res.status(500).send("Error rendering footer.ejs");
+      }
+
+      // Render the index.ejs template
+      res.render("index.ejs", {
+          currencies: currencies,
+          active: 'convert', 
+          famount: 1,
+          funit: 'Bristish Pound',
+          tamount: 1.1701,
+          tunit: 'Euro'
+      }, (err, indexHTML) => {
+          if (err) {
+              console.error("Error rendering index.ejs:", err);
+              return res.status(500).send("Error rendering index.ejs");
+          }
+
+          res.send(indexHTML);
+      });
+  });
     
 });
 
 app.get("/charts", async (req, res) => {
+
+  res.render("footer.ejs", { currencies: currencies }, (err, footerHTML) => {
+    if (err) {
+        console.error("Error rendering footer.ejs:", err);
+        return res.status(500).send("Error rendering footer.ejs");
+    }
+    res.render("charts.ejs", {
+       active: 'charts'
+    }, (err, chartsEJS) => {
+        if (err) {
+            console.error("Error rendering charts.ejs:", err);
+            return res.status(500).send("Error rendering charts.ejs");
+        }
+        res.send(chartsEJS);
+    });
+});
 
     res.render("charts.ejs", {active: 'charts'})
 });
@@ -62,14 +104,6 @@ app.post("/convert", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-let countries = ["Afghanistan", "Algeria", "Argentina", "Australia", "Bangladesh", "Belgium", "Bhutan",
-                 "Brazil", "Canada", "China", "Denmark", "Ethiopia", "Finland", "France", "Germany",
-                 "Hungary", "Iceland", "India", "Indonesia", "Iran", "Italy", "Japan", "Malaysia",
-                 "Maldives", "Mexico", "Morocco", "Nepal", "Netherlands", "Nigeria", "Norway", "Pakistan",
-                 "Peru", "Russia", "Romania", "South Africa", "Spain", "Sri Lanka", "Sweden", "Switzerland",
-                 "Thailand", "Turkey", "Uganda", "Ukraine", "United States", "United Kingdom", "Vietnam"];
-
 
 let country_list = {
   "AED" : "AE",

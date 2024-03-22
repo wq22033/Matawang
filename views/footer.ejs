@@ -10,12 +10,74 @@
     </footer>
     <script>
 
-        const wrapper = document.querySelector(".wrapper");
-        select = document.querySelector(".select-btn");
-        
-        select.addEventListener("click", () => {
-            wrapper.classList.toggle("active");
+        const fwrapper = document.querySelector(".fwrapper");
+        const twrapper = document.querySelector(".twrapper");
+        const footer = document.querySelector('footer');
+        const fselect = document.querySelector(".f-btn");
+        const tselect = document.querySelector(".t-btn");
+        const fsearch = fwrapper.querySelector("input");
+        const tsearch = twrapper.querySelector("input");
+        const foptions = fwrapper.querySelector(".options");
+        const toptions = twrapper.querySelector(".options");
+
+        let currencies = <%- JSON.stringify(currencies) %>;
+
+        function updateName(ToFrom, selected) {
+            const search = ToFrom === 'from' ? fsearch : tsearch;
+            const select = ToFrom === 'from' ? fselect : tselect;
+            const wrapper = ToFrom === 'from' ? fwrapper : twrapper;
+
+            search.value = "";
+            wrapper.classList.remove("active");
+            select.firstElementChild.innerText = selected.innerText;
+        }
+
+        fsearch.addEventListener("keyup", () => {
+            let arr = [];
+            let searchWord = fsearch.value.toLowerCase();
+            
+            arr = currencies.filter(data => {
+                return data.Name.toLowerCase().startsWith(searchWord) || data.Code.toLowerCase().startsWith(searchWord);
+            }).map(data => {
+                let isSelected = data.Name === fselect.firstElementChild.innerText ? "selected" : "";
+                return `<li onclick="updateName('from', this)" class="${isSelected}"><span><b>${data.Code}</b>&nbsp-&nbsp${data.Name}</span></li>`;
+            
+            }).join("");
+            foptions.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Currency not found</p>`;
         });
+
+        fselect.addEventListener("click", () => {
+            fwrapper.classList.toggle("active");
+            if (fwrapper.classList.contains('active') || twrapper.classList.contains('active')) {
+                footer.classList.add('active');
+            } else {
+                footer.classList.remove('active');
+            }
+        });
+
+        tsearch.addEventListener("keyup", () => {
+            let arr = [];
+            let searchWord = tsearch.value.toLowerCase();
+            
+            arr = currencies.filter(data => {
+                return data.Name.toLowerCase().startsWith(searchWord) || data.Code.toLowerCase().startsWith(searchWord);
+            }).map(data => {
+                let isSelected = data.Name === tselect.firstElementChild.innerText ? "selected" : "";
+                return `<li onclick="updateName('to', this)" class="${isSelected}"><span><b>${data.Code}</b>&nbsp-&nbsp${data.Name}</span></li>`;
+            
+            }).join("");
+            toptions.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Currency not found</p>`;
+        });
+
+        tselect.addEventListener("click", () => {
+            twrapper.classList.toggle("active");
+            if (fwrapper.classList.contains('active') || twrapper.classList.contains('active')) {
+                footer.classList.add('active');
+            } else {
+                footer.classList.remove('active');
+            }
+        });
+
 
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

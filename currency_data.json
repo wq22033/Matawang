@@ -196,7 +196,9 @@
     "Index": 24,
     "Name": "Belarusian ruble",
     "Code": "BYN",
-    "Countries": []
+    "Countries": [
+      "BY"
+    ]
   },
   {
     "Index": 25,
