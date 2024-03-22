@@ -222,20 +222,19 @@ form button{
     justify-content: space-between;
 }
 
-.select-btn img{
+.select-btn img, .options img{
     max-width: 50px;
+    border: 1px solid gainsboro;
 }
 
-/* .select-btn span{
+.select-btn span{
     white-space: nowrap;
     overflow: hidden;
-    z-index: 3;
-} */
+}
 
 .select-btn ion-icon{
     font-size: 20px;
     transition: transform 0.3s linear;
-    z-index: 1;
 }
 .wrapper.active .select-btn ion-icon{
     transform: rotate(-180deg);

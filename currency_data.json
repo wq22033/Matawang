@@ -1248,6 +1248,7 @@
     "Name": "US Dollar",
     "Code": "USD",
     "Countries": [
+      "US",
       "AC",
       "AS",
       "BQ",

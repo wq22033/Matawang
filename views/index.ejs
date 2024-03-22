@@ -10,10 +10,8 @@
                         <p>From</p>
                         <div class="wrapper fwrapper">
                             <div class="select-btn f-btn">
-                                <div style="display: flex;">
-                                    <img src="/images/flags/gb.png" alt="GBP">
-                                    <span style="padding-left: 7px;">GBP - British Pound</span>
-                                </div>
+                                <img src="/images/flags/gb.png" alt="GBP">
+                                <span style="padding-left: 7px;">GBP - British Pound</span>
                                 <ion-icon name="chevron-down-outline"></ion-icon>
                             </div>
                             <div class="content">
@@ -24,8 +22,12 @@
                                 <ul class="options foptions" id="currencyList">
                                     <div>
                                         <% currencies.forEach(currency => { %>
-                                            <% let selected = currency.Code === "EUR" ? "selected" : ""; %>
-                                            <li onclick="updateName('from',this)"" code="<%= currency.Code %>"><span><b><%= currency.Code %></b> &nbsp;-&nbsp;<%= currency.Name %></span></li>
+                                            <% if (currency.Countries.length != 0) { %>
+                                                <li onclick="updateName('from',this)"" code="<%= currency.Code %>">
+                                                    <img src="/images/flags/<%= currency.Countries[0].toLowerCase() %>.png" alt="<%= currency.Code %>">
+                                                    <span style="padding-left: 7px;"><b><%= currency.Code %></b> &nbsp;-&nbsp;<%= currency.Name %></span>
+                                                </li>
+                                            <% } %>
                                         <% }); %>
                                     </div>
                                 </ul>
@@ -41,12 +43,9 @@
                     <p>To</p>
                     <div class="wrapper twrapper">
                         <div class="select-btn t-btn">
-                            <div style="display: flex;">
-                                <img src="/images/flags/eu.png" alt="EUR">
-                                <span style="padding-left: 7px;">EUR - Euro</span>
-                            </div>
+                            <img src="/images/flags/eu.png" alt="EUR">
+                            <span style="padding-left: 7px;">EUR - Euro</span>
                             <ion-icon name="chevron-down-outline"></ion-icon>
-                        
                         </div>
                         <div class="content">
                             <div class="search" id="search">
@@ -54,12 +53,14 @@
                                 <input spellcheck="false" type="text" placeholder="Search">
                             </div>
                             <ul class="options toptions" id="currencyList">
-                                <div class="scrollable-line">
                                 <% currencies.forEach(currency => { %>
-                                    <% let selected = currency.Code === "EUR" ? "selected" : ""; %>
-                                    <li onclick="updateName('to',this)" code="<%= currency.Code %>"><span><b><%= currency.Code %></b> &nbsp;-&nbsp;<%= currency.Name %></span></li>
+                                    <% if (currency.Countries.length != 0) { %>
+                                        <li onclick="updateName('to',this)"" code="<%= currency.Code %>">
+                                            <img src="/images/flags/<%= currency.Countries[0].toLowerCase() %>.png" alt="<%= currency.Code %>">
+                                            <span style="padding-left: 7px;"><b><%= currency.Code %></b> &nbsp;-&nbsp;<%= currency.Name %></span>
+                                        </li>
+                                    <% } %>
                                 <% }); %>
-                                </div>
                             </ul>
                         </div>
                     </div>

@@ -27,10 +27,35 @@
             const select = ToFrom === 'from' ? fselect : tselect;
             const wrapper = ToFrom === 'from' ? fwrapper : twrapper;
 
+            // Get the new image source and text from the selected element
+            const newImgSrc = selected.querySelector('img').src;
+            console.log(newImgSrc);
+            const newText = selected.querySelector('span').innerText;
+
             search.value = "";
             wrapper.classList.remove("active");
-            select.firstElementChild.innerText = selected.innerText;
+
+            // Update the image source and text in the select element
+            select.querySelector('img').src = newImgSrc;
+            select.querySelector('span').innerText = newText;
         }
+
+        function swap() {
+            var from = document.querySelector('.from');
+            var to = document.querySelector('.to');
+
+            var fromImgSrc = from.querySelector('img').src;
+            var fromText = from.querySelector('span').innerText;
+            var toImgSrc = to.querySelector('img').src;
+            var toText = to.querySelector('span').innerText;
+
+            from.querySelector('img').src = toImgSrc;
+            from.querySelector('span').innerText = toText;
+            to.querySelector('img').src = fromImgSrc;
+            to.querySelector('span').innerText = fromText;
+        }
+
+        document.querySelector('.swap').addEventListener('click', swap);
 
         fsearch.addEventListener("keyup", () => {
             let arr = [];
@@ -40,7 +65,15 @@
                 return data.Name.toLowerCase().startsWith(searchWord) || data.Code.toLowerCase().startsWith(searchWord);
             }).map(data => {
                 let isSelected = data.Name === fselect.firstElementChild.innerText ? "selected" : "";
-                return `<li onclick="updateName('from', this)" class="${isSelected}"><span><b>${data.Code}</b>&nbsp-&nbsp${data.Name}</span></li>`;
+                if (data.Countries.length === 0) {
+                    return;
+                } else {
+                    return `
+                        <li onclick="updateName('from', this)" code="${data.Code}" class="${isSelected}">
+                            <img src="/images/flags/${data.Countries[0].toLowerCase()}.png" alt="${data.Code}">
+                            <span style="padding-left: 7px;"><b>${data.Code}</b>&nbsp;-&nbsp;${data.Name}</span>
+                        </li>`;
+                }
             
             }).join("");
             foptions.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Currency not found</p>`;
@@ -63,8 +96,15 @@
                 return data.Name.toLowerCase().startsWith(searchWord) || data.Code.toLowerCase().startsWith(searchWord);
             }).map(data => {
                 let isSelected = data.Name === tselect.firstElementChild.innerText ? "selected" : "";
-                return `<li onclick="updateName('to', this)" class="${isSelected}"><span><b>${data.Code}</b>&nbsp-&nbsp${data.Name}</span></li>`;
-            
+                if (data.Countries.length === 0) {
+                    return;
+                } else {
+                    return `
+                        <li onclick="updateName('from', this)" code="${data.Code}" class="${isSelected}">
+                            <img src="/images/flags/${data.Countries[0].toLowerCase()}.png" alt="${data.Code}">
+                            <span style="padding-left: 7px;"><b>${data.Code}</b>&nbsp;-&nbsp;${data.Name}</span>
+                        </li>`;
+                }
             }).join("");
             toptions.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Currency not found</p>`;
         });
