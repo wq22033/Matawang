@@ -62,6 +62,16 @@
             from.querySelector('span').innerText = toText;
             to.querySelector('img').src = fromImgSrc;
             to.querySelector('span').innerText = fromText;
+
+            // Get the hidden input elements
+            var fromCurrencyCode = document.getElementById('fromCurrencyCode');
+            var toCurrencyCode = document.getElementById('toCurrencyCode');
+
+            // Swap the values of the hidden input elements
+            var temp = fromCurrencyCode.value;
+            fromCurrencyCode.value = toCurrencyCode.value;
+            toCurrencyCode.value = temp;
+
         }
 
         document.querySelector('.swap').addEventListener('click', swap);
