@@ -38,3 +38,4 @@ node index.js
 The latest version of the website is deployed and hosted on Render. You can access it by clicking [here](https://matawang.onrender.com).
 
 ## Interface Preview
+<img src="/public/images/preview1">
