@@ -24,7 +24,7 @@ app.get("/", async (req, res) => {
     res.render("footer.ejs", { currencies: currencies }, (err, footerHTML) => {
       if (err) {
           console.error("Error rendering footer.ejs:", err);
-          return res.status(500).send("Error rendering footer.ejs");
+          return res.status(500).send("Internal Server Error");
       }
 
       // Render the index.ejs template
@@ -42,7 +42,7 @@ app.get("/", async (req, res) => {
       }, (err, indexHTML) => {
           if (err) {
               console.error("Error rendering index.ejs:", err);
-              return res.status(500).send("Error rendering index.ejs");
+              return res.status(500).send("Internal Server Error");
           }
 
           res.send(indexHTML);
