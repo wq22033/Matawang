@@ -5,7 +5,7 @@
 </p>
 
 ## Summary
-Mata Wang is a currency exchange web application that simplifies the process of converting currencies. It uses EJS, CSS, and JavaScript to retrieve real-time exchange rates through @everapi/currencyapi-js. With its user-friendly interface and swift results, Mata Wang assists users in exchanging currencies seamlessly. I aim to enhance its functionality by introducing features such as user authentication, interactive charts, and language support.
+Mata Wang is a currency exchange web application that simplifies the process of converting currencies. It uses EJS, CSS, and JavaScript to retrieve real-time exchange rates through `@everapi/currencyapi-js`. With its user-friendly interface and swift results, Mata Wang assists users in exchanging currencies seamlessly. I aim to enhance its functionality by introducing features such as user authentication, interactive charts, and language support.
 
 ## Getting Started
 ### Running the Website Locally
