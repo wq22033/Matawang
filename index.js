@@ -81,11 +81,11 @@ app.post("/convert", async (req, res) => {
         res.render("index.ejs", { 
           currencies: currencies,
           active: 'convert', 
-          fCountry: fCountry,
+          fCountry: fCountry.tolowercase(),
           fCode: fCode,
           fAmount: Math.round(amount),
           fName: fName,
-          tCountry: tCountry,
+          tCountry: tCountry.tolowercase(),
           tCode: tCode,
           tAmount: response.data[tCode].value * amount, 
           tName: tName })
