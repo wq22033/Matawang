@@ -30,12 +30,15 @@ npm install
 ```
 node index.js
 ```
+Please ensure to replace the API_KEY placeholder with your own API key. If you don't have an API key yet, you can register for an account [here](https://currencyapi.com/) to obtain one.
+
 5. To stop the development server, press `Ctrl + C` in the terminal where the server is running
 
 
 ### Accessing the Deployed Website
 
 The latest version of the website is deployed and hosted on Render. You can access it by clicking [here](https://matawang.onrender.com).
+If an internal server error is encountered, it indicates that the maximum limit of API calls for my API key has been reached.
 
 ## Interface Preview
 <div style="display: flex;">
