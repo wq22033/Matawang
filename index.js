@@ -57,7 +57,6 @@ app.post("/convert", async (req, res) => {
     let fCode = req.body.fromCurrency;
     let tCode = req.body.toCurrency;
     const amount = req.body.amount;
-
     // Split on dash and take the first part as the currency code
     fCode = fCode.split('-')[0].trim();
     tCode = tCode.split('-')[0].trim();
@@ -81,11 +80,11 @@ app.post("/convert", async (req, res) => {
         res.render("index.ejs", { 
           currencies: currencies,
           active: 'convert', 
-          fCountry: fCountry.tolowercase(),
+          fCountry: fCountry.toLowerCase(),
           fCode: fCode,
           fAmount: Math.round(amount),
           fName: fName,
-          tCountry: tCountry.tolowercase(),
+          tCountry: tCountry.toLowerCase(),
           tCode: tCode,
           tAmount: response.data[tCode].value * amount, 
           tName: tName })
